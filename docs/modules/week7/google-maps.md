@@ -12,6 +12,14 @@ To get your Google API key, if you don't already have one, then [visit this page
 
 [Google Cloud API Console](https://console.cloud.google.com/apis/dashboard) is where you can manage your API key and set restrictions on its usage.
 
+For testing purposes you can simply create an API key for Google Maps JavaScript API. However, in the Cordova app you will get the "for development purposes" overlay.
+
+To get rid of this you will need to:
+
+1. Create a Google Cloud Project with Billing Information
+2. Enable the Google Maps JavaScript API for the Project
+3. Create the API key for the project.
+
 ## Getting Started
 
 To use the Google Maps Javascript API you will need to add the Google Maps Javascript to your webpage.
