@@ -10,7 +10,7 @@ It's important to note that there are different versions of the Google Maps API,
 
 To get your Google API key, if you don't already have one, then [visit this page](https://developers.google.com/maps/documentation/javascript/get-api-key).
 
-[Google Cloud API Console](https://console.cloud.google.com/apis/dashboard)
+[Google Cloud API Console](https://console.cloud.google.com/apis/dashboard) is where you can manage your API key and set restrictions on its usage.
 
 ## Getting Started
 
