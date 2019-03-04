@@ -10,6 +10,8 @@ It's important to note that there are different versions of the Google Maps API,
 
 To get your Google API key, if you don't already have one, then [visit this page](https://developers.google.com/maps/documentation/javascript/get-api-key).
 
+[Google Cloud API Console](https://console.cloud.google.com/apis/dashboard)
+
 ## Getting Started
 
 To use the Google Maps Javascript API you will need to add the Google Maps Javascript to your webpage.
@@ -17,7 +19,11 @@ To use the Google Maps Javascript API you will need to add the Google Maps Javas
 Best Practice: USE HTTPS for all your scripts, css, images, and HTML files.
 
 ```html
-<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
+<script
+  src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"
+  async
+  defer
+></script>
 ```
 
 Add this script tag to your page and replace `YOUR_API_KEY` with the API key that you got from the developer site. The "callback" parameter in the querystring would be the name of a function in your own script that you want called once the google map JavaScript has finished loading. This function can be called whatever you like.
@@ -34,13 +40,14 @@ Next, we need to make sure that we give some dimensions to the map element. Here
 
 ```css
 #map {
-    height: 100%;
-  }
-  html, body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-  }
+  height: 100%;
+}
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
 ```
 
 Next, in your own Javascript file we need to initialize the map with the coordinates `45.3496711,-75.7569551`
@@ -48,8 +55,8 @@ Next, in your own Javascript file we need to initialize the map with the coordin
 ```js
 let map;
 function initMap() {
-  map = new google.maps.Map(document.getElementById('map'), {
-    center: {lat: 45.3496711, lng: -75.7569551},
+  map = new google.maps.Map(document.getElementById("map"), {
+    center: { lat: 45.3496711, lng: -75.7569551 },
     zoom: 16,
     mapTypeId: google.maps.MapTypeId.ROADMAP
   });
@@ -76,7 +83,7 @@ Here is a video by a couple of Google's Developers talking about some common err
     url="https://www.youtube.com/embed/21PDd17dnnI"
 />
 
-The following pages cover adding controls, makers, and managing events on your maps. 
+The following pages cover adding controls, makers, and managing events on your maps.
 
 Beyond those things there are additional, related APIs from Google that let us do things like get directions, geocode for addresses, or calculate distances on the map. See the links below for more information on these topics.
 
