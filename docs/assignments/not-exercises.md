@@ -2,7 +2,7 @@
 
 1. Click to make random message appear and then self remove after a delay.
 
-Topics: random numbers, timers, DOM manipulation 
+Topics: random numbers, timers, DOM manipulation
 
 2. Find and Replace text. Enter a single letter in the input, click the button, search and replace all the characters in the paragraphs that match with the capitalized version of that letter.
 
@@ -12,11 +12,14 @@ Topics: loops, string comparisons, form inputs and events
 
 Topics: array methods: filter, map, reduce, sort
 
-4. Make a fetch call to a webpage which could return different status codes - 200, 302, 403, 500, ... Respond appropriately to the status code by telling the user what is happening after the result comes back.
+4. Take exercise 3 and add a form at the top to sort and filter the data dynamically. provide the eventlisteners. provide the function to do the sorting and filtering. Students have to write the code to get the values from the form elements and then pass the appropriate info to the function that filters the data.
 
-Topics: fetch, response objects, catch, errors
+Topics: Array filter, sort, map, <select> elements and `<input>` elements, input event, change event.
 
 5. Prevent multiple submissions. Disable the button after the user clicks. Re-enable the button after the response comes back. Display the message when it comes back. Remove the message from the screen when the user clicks the submit button. Display a loading message of some type.
 
 Topics: mouse events, fetch, dom manipulation
 
+6. Make a fetch call to a webpage which could return different status codes - 200, 302, 403, 500, ... Respond appropriately to the status code by telling the user what is happening after the result comes back.
+
+Topics: fetch, response objects, catch, errors

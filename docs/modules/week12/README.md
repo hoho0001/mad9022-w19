@@ -34,7 +34,7 @@ While Javascript is a prototyped language with functional programming features, 
 
 JavaScript DOES NOT HAVE CLASSES.
 
-The `class` keyword is simply a syntactical sugar added to the language to make it look like classes. This was done to help programmers from other languages migrate to JS. 
+The `class` keyword is simply a syntactical sugar added to the language to make it look like classes. This was done to help programmers from other languages migrate to JS.
 
 [Learn more about JavaScript Classes](./es6-classes.md)
 
@@ -52,9 +52,15 @@ Once the data is taken out of the TypedArray you can convert the bytes to whatev
 
 The HTML5 Speech API lets us do two things:
 
-- simple text-to-speech operations 
+- simple text-to-speech operations
 - speech-recognition
 
 all from JavaScript
 
 [Learn more about the Speech API](./speech.md)
+
+## Timed Exercise Topics
+
+- mouse events;
+- fetch;
+- DOM manipulation

@@ -15,7 +15,6 @@
 
 **[Setup Instructions for all Cordova Projects](./project-setup.md)**
 
-
 ## Verbal Quizzes <Badge text="20% of Final Grade"/>
 
 - Over the course of the semester many of the classes will begin with a series of pop quiz questions. Some classes will have no questions. Some will have between 5 and 10 questions.
@@ -25,21 +24,20 @@
 - Answer 5 questions correctly to get your full 20%.
 - You can answer a maximum of 2 questions per class.
 - To help you prepare for the quizzes, here is the list of topics by week.
-    1. Cordova Basics
-    2. HTML Canvas
-    3. Arrays
-    4. DOM
-    5. DOM
-    6. Cordova
-    7. Objects
-    8. Loops
-    9. CSS
-    10. Promises
-    11. fetch and AJAX
-    12. ES6 Features
-    13. ES6 Features
-    14. ---
-
+  1. Cordova Basics
+  2. HTML Canvas
+  3. Arrays
+  4. DOM
+  5. DOM
+  6. Cordova
+  7. Objects
+  8. Loops
+  9. CSS
+  10. Promises
+  11. fetch and AJAX
+  12. ES6 Features
+  13. ES6 Features
+  14. ***
 
 ## Assignments <Badge text="20% of Final Grade"/>
 
@@ -66,15 +64,19 @@
 The Exercises will take place during:
 
 - Week 3
+  - **TOPICS**: Random numbers, Timers, DOM manipulation
 - Week 5
+  - **TOPICS**: loops, string comparison methods, form `input` elements and form `events`.
 - Week 7
+  - **TOPICS**: Array `filter`, `sort`, `map`
 - Week 9
+  - **TOPICS**: Array `filter`, `sort`, `map`, `<select>` and `<input>` elements, `input Event`, `change Event`.
 - Week 12
+  - **TOPICS**: `click event`, `fetch`, handling requests and responses, disabling elements.
 
 ## Practice Exercises
 
-- These are exercises that you can do at any time to practice and improve your JavaScript skills. 
+- These are exercises that you can do at any time to practice and improve your JavaScript skills.
 - These are not for submission or grades.
 
 **[Practice Exercises](./practice.md)**
-

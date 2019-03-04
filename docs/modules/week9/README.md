@@ -21,3 +21,7 @@ Tiny\$hell is a framework built by Steve to save time on small Cordova projects 
 **Recently redeveloped with new JavaScript and updated CSS layout using Flexbox.**
 
 [Tiny\$hell Framework](./tinyshell.md)
+
+## Topics for Next Timed Exercise
+
+Array `filter`, `sort`, `map`, `<select>` elements and `<input>` elements, `input event`, `change event`.
