@@ -5,61 +5,64 @@
 To be able to develop Android applications there are a number of things that you need to have installed and prepared regardless of whether you are doing Android native, Cordova, NativeScript, Xamarin or ReactNative.
 
 1. Android Studio IDE - when you install this, you will get the basic Android SDK
-    - To download Android Studio visit [this site](https://developer.android.com/studio/?gclid=CjwKCAiA4OvhBRAjEiwAU2FoJbrHs3natxQUwCehaStAbkhuA7z_gCk-v32LuvGidCOsM9ELY0xlehoCv1oQAvD_BwE)
-    - Android Studio [Official Documentation](https://developer.android.com/studio/intro/)
+
+   - To download Android Studio visit [this site](https://developer.android.com/studio/?gclid=CjwKCAiA4OvhBRAjEiwAU2FoJbrHs3natxQUwCehaStAbkhuA7z_gCk-v32LuvGidCOsM9ELY0xlehoCv1oQAvD_BwE)
+   - Android Studio [Official Documentation](https://developer.android.com/studio/intro/)
 
 2. JDK - Java Developer Kit. This is **NOT** the same thing as the JRE (Java RunTime Environment). You need the JDK to compile your Android apps. For Cordova we need version 8.x.x of the JDK.
-    - To download the JDK [find your OS on this page](https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
-    - Make sure that it is version 8.
+
+   - To download the JDK [find your OS on this page](https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
+   - Make sure that it is version 8.
 
 3. Android SDK updates to APIs and tools. For each version of Android - KitKat, Marshmallow, Nougat, Oreo, etc. there is an individual API. For all the build tools and supporting code there are multiple things to update.
-    - To Update the APIs and Tools for the Android SDK you will need open Android Studio.
+
+   - To Update the APIs and Tools for the Android SDK you will need open Android Studio.
 
 4. Updating your Environmental Variables to indicate where the JDK and SDK are installed as well as the location for the various tools for the SDK.
-    - [Official Reference for Environmental Variables](https://developer.android.com/studio/command-line/variables)
-    - Here is a video that will help you update your Environmental Variables on OSX
 
-    <YouTube
-        title="Managing ENV variables on OSX"
-        url="https://www.youtube.com/embed/3XjkaN8psp0"
-    />
+   - [Official Reference for Environmental Variables](https://developer.android.com/studio/command-line/variables)
+   - Here is a video that will help you update your Environmental Variables on OSX
 
-    The variables we should create are:
+   <YouTube
+       title="Managing ENV variables on OSX"
+       url="https://www.youtube.com/embed/3XjkaN8psp0"
+   />
 
-    ```
-    ANDROID_HOME  - the location of the Android SDK folder
-    STUDIO_JDK    - The location of the JDK to use with Android. Can also be called JAVA_HOME.
-    GRADLE_HOME   - The location of the current Gradle version folder
-    ```
+   The variables we should create are:
 
-    The current version of Gradle on OSX would be in a location like this `"/Applications/Android Studio.app/Contents/gradle/gradle-4.4"`. We put double quotes around it because there is a space in the path.
+   ```
+   ANDROID_HOME  - the location of the Android SDK folder
+   STUDIO_JDK    - The location of the JDK to use with Android. Can also be called JAVA_HOME.
+   GRADLE_HOME   - The location of the current Gradle version folder
+   ```
 
-    In the `PATH` variable we need to include the locations for these folders. They are all inside of ANDROID_HOME, except for `bin` which is inside JAVA_HOME / STUDIO_SDK
+   The current version of Gradle on OSX would be in a location like this `"/Applications/Android Studio.app/Contents/gradle/gradle-4.4"`. We put double quotes around it because there is a space in the path.
 
-    ```
-    bin  - inside JAVA_HOME
-    bin  - inside GRADLE_HOME
-    emulator
-    tools/bin
-    tools
-    platform-tools
-    build-tools  - this was in older config versions.
-    ```
+   In the `PATH` variable we need to include the locations for these folders. They are all inside of ANDROID_HOME, except for `bin` which is inside JAVA_HOME / STUDIO_SDK
 
+   ```
+   bin  - inside JAVA_HOME
+   bin  - inside GRADLE_HOME
+   emulator
+   tools/bin
+   tools
+   platform-tools
+   build-tools  - this was in older config versions.
+   ```
 
-5. AVDs - Android Virtual Devices are the different version files for each Emulator that you would run. An AVD contains things like screen size, memory, Android API version, and device capabilities. When the emulator runs it needs one of these files to know how it is supposed to behave. Think of them as the Operating System for your emulator.
-    - You can create AVDs from the CLI but it is much easier to do through Android Studio.
-    - This video should help
+5) AVDs - Android Virtual Devices are the different version files for each Emulator that you would run. An AVD contains things like screen size, memory, Android API version, and device capabilities. When the emulator runs it needs one of these files to know how it is supposed to behave. Think of them as the Operating System for your emulator.
 
-    <YouTube
-        title="Creating AVDs"
-        url="https://www.youtube.com/embed/p4l2ATShaEY"
-    />
+   - You can create AVDs from the CLI but it is much easier to do through Android Studio.
+   - This video should help
 
-6. Android Devices with the development options turned on.
-    - Go to the `Settings` for the device and location the `Build Number`, usually in the `About this phone` section.
-    - Tap 7 times on the `build number` to unlock development features.
+   <YouTube
+       title="Creating AVDs"
+       url="https://www.youtube.com/embed/p4l2ATShaEY"
+   />
 
+6) Android Devices with the development options turned on.
+   - Go to the `Settings` for the device and location the `Build Number`, usually in the `About this phone` section.
+   - Tap 7 times on the `build number` to unlock development features.
 
 ## OSX Terminal
 
@@ -108,7 +111,6 @@ To reference existing values the old variables get percentage signs around them 
 set MYVAR=%MYVAR%;someNewValue
 ```
 
-
 ## OSX Android Config
 
 See the notes and video above to managing the ENV variables for OSX.
@@ -133,4 +135,8 @@ In OSX you can add this line to your `.bash_profile`
 export JAVA_HOME=$(/usr/libexec/java_home)
 ```
 
-This will call a method to locate where Java is installed. This way, as you update the JDK you will have an updated path.  This only works if you only have the one version of the JDK installed on your computer. If you are working with multiple targets for the JDK this will not work.
+This will call a method to locate where Java is installed. This way, as you update the JDK you will have an updated path. This only works if you only have the one version of the JDK installed on your computer. If you are working with multiple targets for the JDK this will not work.
+
+## References
+
+Here is the Cordova Reference [for working with the Android Platform](https://cordova.apache.org/docs/en/latest/guide/platforms/android/)
