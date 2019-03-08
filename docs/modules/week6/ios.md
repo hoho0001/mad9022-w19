@@ -173,3 +173,7 @@ chown -R [your username here] configstore
 ```
 
 Put your own username in the command without the square brackets.
+
+## References
+
+Here is the official Cordova Reference [for working with iOS](https://cordova.apache.org/docs/en/latest/guide/platforms/ios/index.html)
