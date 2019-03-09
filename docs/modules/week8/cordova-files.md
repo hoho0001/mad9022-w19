@@ -239,6 +239,30 @@ function readBinaryFile(fileEntry){
 }
 ```
 
+## Creating Directories
+
+Directory entries are similar to file entries. We can only create them one at a time. The following code snippet will create a folder called 'myNewDir' and then a folder called 'images' inside it.
+
+```js
+window.requestFileSystem(LocalFileSystem.PERSISTENT, 0, function(fs) {
+  fs.root.getDirectory(
+    "myNewDir",
+    { create: true },
+    function(dirEntry) {
+      dirEntry.getDirectory(
+        "images",
+        { create: true },
+        function(subDirEntry) {
+          createFile(subDirEntry, "fileInNewSubDir.txt");
+        },
+        onErrorGetDir
+      );
+    },
+    onErrorGetDir
+  );
+});
+```
+
 ## Deleting a File
 
 ## References and Resources
