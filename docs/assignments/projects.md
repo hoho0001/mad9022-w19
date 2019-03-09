@@ -210,7 +210,7 @@ The message should be an overlay. The user needs to be able to read it while the
 
 ## Demo Animation
 
-![Tundra Animation](2018-tundra-demo.gif)
+![Tundra Animation](./2018-tundra-demo.gif)
 
 ## Favourites Screen
 
