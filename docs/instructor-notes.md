@@ -30,3 +30,7 @@ Next year change order for Cordova projects
 4. Geolocation
 5. Canvas + capture video + thumbnails
 6. ?
+
+## Vuepress site
+
+Add a link back to the Module ReadMe file in every module content page.

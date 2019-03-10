@@ -100,7 +100,7 @@ In your config.xml file you also need to add `<access origin="cdvfile://*" />`.
 12	PATH_EXISTS_ERR
 ```
 
-## Creating Files
+## Creating Text Files
 
 To create a file you need two things. First, access to the filesystem, and second, to choose if your file will be TEMPORARY or PERMANENT.
 
@@ -134,7 +134,7 @@ window.requestFileSystem(
   window.TEMPORARY,
   5 * 1024 * 1024,
   function(fs) {
-    console.log("file system open: " + fs.name);
+    console.log("file system open:", fs.name);
     let directoryObj = fs.root;
     directoryObj.getFile(
       "newTempFile.txt",
@@ -162,10 +162,12 @@ fileEntry.createWriter(function(fileWriterObj) {
   };
 
   fileWriterObj.onerror = function(err) {
-    console.log("Failed file write: " + err.toString());
+    console.log("Failed file write:" + err.toString());
   };
 
-  let data = new Blob(["doctype and more html..."], { type: "text/html" });
+  let data = new Blob(["doctype and more actual html..."], {
+    type: "text/html"
+  });
 
   fileWriterObj.write(data);
 });
@@ -196,46 +198,49 @@ To create or read a binary file the process is similar to the examples with the 
 
 ```js
 //download a file with fetch and save it to the filesystem
-fetch('http://www.example.com/image.png)
-.then(response => {
+fetch("http://www.example.com/image.png")
+  .then(response => {
     return response.blob();
-})
-.then( blob => {
+  })
+  .then(blob => {
     //we have the binary file.
-    dirEntry.getFile('image.png', { create: true, exclusive: false }, function (fileEntry) {
-        fileEntry.createWriter(function (fileWriter) {
-        fileWriter.onwriteend = function() {
+    dirEntry.getFile(
+      "image.png",
+      { create: true, exclusive: false },
+      function(fileEntry) {
+        fileEntry.createWriter(function(fileWriter) {
+          fileWriter.onwriteend = function() {
             console.log("Successful file write...");
             readBinaryFile(fileEntry); //see method below
-        };
-        fileWriter.onerror = function(e) {
+          };
+          fileWriter.onerror = function(e) {
             console.log("Failed file write: " + e.toString());
-        };
-        fileWriter.write(blob);
-    });
-
-    }, onErrorCreateFile);
-})
-.catch( err => {
-    console.error( err.message );
-});
+          };
+          fileWriter.write(blob);
+        });
+      },
+      onErrorCreateFile
+    );
+  })
+  .catch(err => {
+    console.error(err.message);
+  });
 
 //To read the binary file, use a method like this
-function readBinaryFile(fileEntry){
-    fileEntry.file(function (file) {
-        let reader = new FileReader();
+function readBinaryFile(fileEntry) {
+  fileEntry.file(function(file) {
+    let reader = new FileReader();
 
-        reader.onloadend = function() {
-            console.log("file name:", fileEntry.fullPath );
-            //image is ready to be used in the interface.
-            let blob = new Blob([new Uint8Array(this.result)], { type: "image/png" });
-            let img = document.getElementById('picture');
-            img.src = window.URL.createObjectURL(blob);
-        };
+    reader.onloadend = function() {
+      console.log("file name:", fileEntry.fullPath);
+      //image is ready to be used in the interface.
+      let blob = new Blob([new Uint8Array(this.result)], { type: "image/png" });
+      let img = document.getElementById("picture");
+      img.src = window.URL.createObjectURL(blob);
+    };
 
-        reader.readAsArrayBuffer(file);
-
-    }, onErrorReadFile);
+    reader.readAsArrayBuffer(file);
+  }, onErrorReadFile);
 }
 ```
 
