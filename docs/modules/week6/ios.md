@@ -174,6 +174,23 @@ chown -R [your username here] configstore
 
 Put your own username in the command without the square brackets.
 
+13. If you are getting errors that mention 'EXPORT FAILED' you can try to create a `build.json` file at the root of your project (same place as config.xml) with the following contents:
+
+```
+{
+    "ios": {
+        "debug": {
+            "developmentTeam": "V94L67MHG8",
+            "packageType": "development",
+            "automaticProvisioning": true,
+            "buildFlag": [
+                "-UseModernBuildSystem=0"
+            ]
+        }
+    }
+}
+```
+
 ## References
 
 Here is the official Cordova Reference [for working with iOS](https://cordova.apache.org/docs/en/latest/guide/platforms/ios/index.html)
