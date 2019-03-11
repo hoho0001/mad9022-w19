@@ -49,6 +49,7 @@ window.addEventListener("filePluginIsReady", () => {
 ```
 
 This plugin will tell you when the filesystem and the plugin are ready.
+** THIS EVENT DOES NOT ALWAYS FIRE**
 
 If you are going to be using the file plugin shortly after the app has been started then you can check the value of the `window.isFilePluginReadyRaised` property. If the property is true then you can go ahead and use the plugin methods.
 
