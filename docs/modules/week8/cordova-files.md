@@ -100,6 +100,20 @@ In your config.xml file you also need to add `<access origin="cdvfile://*" />`.
 12	PATH_EXISTS_ERR
 ```
 
+## Temporary of Persistent
+
+When you access the filesytem there are two versions - Temporary and Persistent. If you create folders or files with the Temporary version then the mobile device is allow to remove them if it needs the memory.
+
+When you create files that are Persistent then you are creating ones that need to be saved for the device to access at a later time or on another launch.
+
+```js
+window.requestFileSystem(LocalFileSystem.PERSISTENT, 0, ftw, wtf);
+
+window.requestFileSystem(LocalFileSystem.TEMPORARY, 1024 * 1024 * 5, ftw, wtf);
+```
+
+Usually when accessing the temporary filesystem you will want to specify how much space you will need for your files. The example above is requesting 5MB of space.
+
 ## FileEntry Objects
 
 The `FileEntry` object represents a file on the local filesystem. Once you have a reference to the filesystem and it's root folder then you can start to navigate the folders and create, write, read, or delete files.
