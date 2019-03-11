@@ -157,9 +157,9 @@ fe.file(ftw, wtf); //get a reference to a file to use with a FileReader
 fe.createWriter(); //create a writer to add data to a file. returns new FileWriter
 ```
 
-## DirEntry Objects
+## DirectoryEntry Objects
 
-The `DirEntry` object represents a directory on the local filesystem. Very similar to the `FileEntry` object there are only a few different methods. Again, it requires you to have access to the filesystem.
+The `DirectoryEntry` object represents a directory on the local filesystem. Very similar to the `FileEntry` object there are only a few different methods. Again, it requires you to have access to the filesystem.
 
 ### Directory Object properties
 
