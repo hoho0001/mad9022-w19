@@ -40,7 +40,7 @@ or you will lose access to old stored files on Android. The iOS version of the I
 
 **Each level of directory must be created one at a time.**
 
-The file plugin will sometimes take longer than the other plugins to be ready to use. If you are going to use the file plugin at the start of your app then you should use an additional event listener to `deviceready`.
+The file plugin will sometimes take longer than the other plugins to be ready to use on Chrome. If you are going to use the file plugin at the start of your app then you should use an additional event listener to `deviceready` if you are using the `browser` platform.
 
 ```js
 window.addEventListener("filePluginIsReady", () => {
@@ -49,7 +49,7 @@ window.addEventListener("filePluginIsReady", () => {
 ```
 
 This plugin will tell you when the filesystem and the plugin are ready.
-** THIS EVENT DOES NOT ALWAYS FIRE**
+** THIS EVENT IS ONLY FOR CHROME**
 
 If you are going to be using the file plugin shortly after the app has been started then you can check the value of the `window.isFilePluginReadyRaised` property. If the property is true then you can go ahead and use the plugin methods.
 
@@ -66,7 +66,7 @@ The first two lines are the full path from the root of the file system.
 
 The bottom line is what will be saved in the `fullPath` property.
 
-If you need the full path from the root of the file system then you would use the `.toURL( )` method.
+If you need the full path from the root of the file system starting with `file:///` then you would use the `.toURL( )` method.
 
 ## CDVFiles
 
@@ -76,7 +76,7 @@ When working with Cordova and internal files within your app, there is a special
 cdvfile://localhost/persistent/path/to/file
 ```
 
-You can convert other file paths to cdvfile paths by using the `toInternalURL( )` method on the FileEntry Object.
+Notice the `persistent` part of the path. This would become `temporary` if you used the alternate filesystem. You can convert other file paths to cdvfile paths by using the `toInternalURL( )` method on the FileEntry Object.
 
 The cdvfile paths are also supported by the `cordova-plugin-file-transfer` and `cordova-plugin-media` plugins.
 
@@ -101,7 +101,7 @@ In your config.xml file you also need to add `<access origin="cdvfile://*" />`.
 12	PATH_EXISTS_ERR
 ```
 
-## Temporary of Persistent
+## Temporary or Persistent Filesystems
 
 When you access the filesytem there are two versions - Temporary and Persistent. If you create folders or files with the Temporary version then the mobile device is allow to remove them if it needs the memory.
 
