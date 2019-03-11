@@ -198,6 +198,7 @@ To create or read a binary file the process is similar to the examples with the 
 
 ```js
 //download a file with fetch and save it to the filesystem
+//if you need to load a local file then you need to use XMLHttpRequest
 fetch("http://www.example.com/image.png")
   .then(response => {
     return response.blob();
