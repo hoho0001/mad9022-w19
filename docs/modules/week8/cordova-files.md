@@ -100,6 +100,84 @@ In your config.xml file you also need to add `<access origin="cdvfile://*" />`.
 12	PATH_EXISTS_ERR
 ```
 
+## FileEntry Objects
+
+The `FileEntry` object represents a file on the local filesystem. Once you have a reference to the filesystem and it's root folder then you can start to navigate the folders and create, write, read, or delete files.
+
+To get a `FileEntry` object you would normally start with the `getFile( )` method on a `DirEntry` object.
+
+```js
+fs.root.getFile("someFile.html", { create: true, exclusive: false }, ftw, wtf);
+```
+
+The first parameter is the name of the file that you want to access (even if it does not exist yet). The second parameter are options about the request for the file. The most common parameter is `create`. This tells the filesystem if it should create the file if it does not exist yet. The exclusive parameter tells the filesystem if this file is only allowed to be accessed by the current app or if it may be shared across apps. The `ftw` parameter is the success callback function. The `wtf` parameter is the error callback function.
+
+### FileEntry Properties
+
+Here are the properties that you can access for a `FileEntry` object.
+
+```js
+fe.isFile; //Boolean
+fe.isDirectory; //Boolean
+fe.name; //String
+fe.fullPath; //String
+fe.nativeURL; //String
+fe.filesystem; //reference to containing filesystem
+```
+
+### FileEntry Methods
+
+Here are the methods that you can access from a `FileEntry` object.
+
+```js
+fe.toURL(); //returns String that usually starts with file:///
+fe.toInternalURL(); //returns String that starts with cdvfile://localhost/
+fe.remove(ftw, wtf); //attempts to remove the file. Has success and error callbacks
+fe.getParent(ftw, wtf); //attempts to get the parent directory
+fe.copyTo(parent, newName, ftw, wtf); //copy a file to a new folder with a new name
+fe.moveTo(parent, newName, ftw, wtf); //move a file to a new folder with a new name
+fe.getMetadata(ftw, wtf); //get the size and modificationTime for a file
+fe.setMetadata(ftw, wtf, metaObj); //update the meta info for a file
+fe.file(ftw, wtf); //get a reference to a file to use with a FileReader
+fe.createWriter(); //create a writer to add data to a file. returns new FileWriter
+```
+
+## DirEntry Objects
+
+The `DirEntry` object represents a directory on the local filesystem. Very similar to the `FileEntry` object there are only a few different methods. Again, it requires you to have access to the filesystem.
+
+### Directory Object properties
+
+These are the properties that you can access from a Directory object.
+
+```js
+dir.isFile; //Boolean
+dir.isDirectory; //Boolean
+dir.name; //String directory name
+dir.fullPath; //String path and folder name from app root
+dir.nativeURL; //String path and folder name from OS filesystem root
+dir.filesystem; // reference to the filesystem used to open the directory
+```
+
+### Directory Object methods
+
+These are the methods that you can use from a Directory object.
+
+```js
+dir.getDirectory(path, options, ftw, wtf); //get a reference to a directory
+dir.getFile(path, options, ftw, wtf); //get a reference to a file in the directory
+dir.moveTo(parent, name, ftw, wtf); //move a folder to a new location
+dir.copyTo(parent, name, ftw, wtf); //copy a folder to a new location
+dir.toURL(); // get the path to the folder starting with file:///
+dir.toInternalURL(); // get the path to the folder starting with cdvfile://localhost/
+dir.remove(ftw, wtf); //delete an empty folder.
+dir.removeRecursively(ftw, wtf); // remove a folder and all of its contents
+dir.getParent(ftw, wtf); //get a reference to the containing folder
+dir.createReader(); //read a file. returns new FileReader
+dir.getMetadata(ftw, wtf);
+dir.setMetadata(ftw, wtf, options);
+```
+
 ## Creating Text Files
 
 To create a file you need two things. First, access to the filesystem, and second, to choose if your file will be TEMPORARY or PERMANENT.
@@ -236,6 +314,8 @@ function readBinaryFile(fileEntry) {
       console.log("file name:", fileEntry.fullPath);
       //image is ready to be used in the interface.
       let blob = new Blob([new Uint8Array(this.result)], { type: "image/png" });
+      //this would give you the blob to work with, if you need that
+      //it can be passed to an HTML element with URL.createObjectURL( )
       let img = document.getElementById("picture");
       img.src = window.URL.createObjectURL(blob);
     };
@@ -243,6 +323,24 @@ function readBinaryFile(fileEntry) {
     reader.readAsArrayBuffer(file);
   }, onErrorReadFile);
 }
+
+//An alternate (simpler) way of simply accessing a file to pass
+//to an HTML element is by with just a FileEntry object
+//this works if you know the path and filename
+fs.root.getFile(
+  "image.png",
+  {
+    create: false
+  },
+  function(fileEntry) {
+    // success function
+    // image.png file has been retrieved from root folder
+    let img = document.createElement("img");
+    img.src = fileEntry.toInternalURL();
+    document.body.appendChild(img);
+  },
+  wtf
+);
 ```
 
 ## Creating Directories
