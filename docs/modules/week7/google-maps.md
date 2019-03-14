@@ -91,6 +91,15 @@ The following pages cover adding controls, makers, and managing events on your m
 
 Beyond those things there are additional, related APIs from Google that let us do things like get directions, geocode for addresses, or calculate distances on the map. See the links below for more information on these topics.
 
+## Getting Up and Running with Google Maps JS API
+
+This tutorial covers how to get your API key and create your first Google Map.
+
+<YouTube
+  title="Getting Started with Google Maps JS API"
+  url="https://www.youtube.com/embed/EwZUQuPjakg"
+/>
+
 ## Reference Links
 
 [to get a Google API key](https://developers.google.com/maps/documentation/javascript/get-api-key)
