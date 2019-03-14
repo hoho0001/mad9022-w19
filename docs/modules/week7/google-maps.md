@@ -27,11 +27,7 @@ To use the Google Maps Javascript API you will need to add the Google Maps Javas
 Best Practice: USE HTTPS for all your scripts, css, images, and HTML files.
 
 ```html
-<script
-  src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"
-  async
-  defer
-></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY"></script>
 ```
 
 Add this script tag to your page and replace `YOUR_API_KEY` with the API key that you got from the developer site. The "callback" parameter in the querystring would be the name of a function in your own script that you want called once the google map JavaScript has finished loading. This function can be called whatever you like.
@@ -40,7 +36,7 @@ You will need an HTML element, like a `<div>`, where the map will be generated. 
 
 ```html
 <body>
-  <div id="map"></map>
+  <div id="map"></div>
 </body>
 ```
 
