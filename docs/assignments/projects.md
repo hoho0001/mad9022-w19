@@ -26,6 +26,8 @@ github repo:  https://www.github.com/[your username]/reviewr
 App name: [your username]
 ```
 
+[Project Setup Instructions](./project-setup.md)
+
 - Create an Android app with Cordova on Windows that allows the user to take a picture of anything and review it.
 - The app will be a single page application - a single HTML file with a series of divs where only one of the divs appears at a time.
 - Use of the History API is optional for this assignment.
@@ -80,6 +82,8 @@ github repo:  https://www.github.com/[your username]/playr
 App name: [your username]
 ```
 
+[Project Setup Instructions](./project-setup.md)
+
 - This cordova app will be a SPA that shows a scrollable playlist of audio files.
 - The app will **NOT** use the HTML5 Audio player to play the audio, but the player itself will not be visible on the page.
 - The [Cordova Media Plugin](https://cordova.apache.org/docs/en/8.x/reference/cordova-plugin-media/index.html) will be required to play the audio on the device.
@@ -101,6 +105,8 @@ package name:  ca.edumedia.[your username].remembrall
 github repo:  https://www.github.com/[your username]/remembrall
 App name: [your username]
 ```
+
+[Project Setup Instructions](./project-setup.md)
 
 - The app will use `localNotifications` to save the dates of special occassions.
 - The home page will show a list of saved dates with labels.
@@ -128,6 +134,8 @@ github repo:  https://www.github.com/[your username]/findr
 App name: [your username]
 ```
 
+[Project Setup Instructions](./project-setup.md)
+
 This app will only have one screen. The whole screen will be filled with an interactive Google Map.
 
 After the app has loaded check for the dimensions of the device screen and resize your map and map div to match those dimensions through JavaScript, not CSS. Next, use Geolocation and center the map on the user's current location.
@@ -146,6 +154,8 @@ github repo:  https://www.github.com/[your username]/thumbed
 App name: [your username]
 ```
 
+[Project Setup Instructions](./project-setup.md)
+
 You will be creating a Cordova App with two screens whic lets a user record a video using the device camera (front or back). After recording and saving the video to the application's `data` directory (not `cache`) you will then use the HTML5 canvas element(s), HTML video element, and IMG element(s) to gather a series of screen grabs from the video. Combine all the screengrabs into a single image that shows 4 thumbnails from the video.
 
 The image with the 4 thumbnails is to be used as the poster image for the saved video. One screen lets the user record videos and generate the thumbnails. The second screen will show the saved videos as a vertical column of video players. Each video player will show the generated poster image.
@@ -159,6 +169,14 @@ Disable the native controls on the video player elements. Do NOT have them autom
 ## Project 6 - Tundra: The Canadian Dating App
 
 - TUNDRA: Cordova App that runs on BOTH iOS and Android
+
+```
+package name:  ca.edumedia.[your username].tundra
+github repo:  https://www.github.com/[your username]/tundra
+App name: [your username]
+```
+
+[Project Setup Instructions](./project-setup.md)
 
 You will building a two screen Single Page Application as a Cordova App.
 

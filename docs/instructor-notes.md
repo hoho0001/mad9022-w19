@@ -38,3 +38,5 @@ Add a link back to the Module ReadMe file in every module content page.
 More on git and setting up projects. Add a video on the project set up page.
 
 More videos on Google maps and other topics that have no videos
+
+Add animated interface .gif files for each assignment
