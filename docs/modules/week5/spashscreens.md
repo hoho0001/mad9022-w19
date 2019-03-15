@@ -12,7 +12,7 @@ This page has the [Cordova reference for icons and splashscreens](http://cordova
    <splash src="www/screen/splash-land-xxhdpi.png" density="land-xxhdpi"/>
    <splash src="www/screen/splash-land-mdpi.png" density="land-mdpi"/>
    <splash src="www/screen/splash-land-xhdpi.png" density="land-xhdpi"/>
-   
+
    <splash src="www/screen/splash-port-hdpi.png" density="port-hdpi"/>
    <splash src="www/screen/splash-port-xxhdpi.png" density="port-xxhdpi"/>
    <splash src="www/screen/splash-port-mdpi.png" density="port-mdpi"/>
@@ -26,10 +26,12 @@ The file names and the density both make it clear which orientation and screen d
 
 Here is a look at the android res folder:
 
-[android-res-folder.png] - image missing - 
+[android-res-folder.png] - image missing -
 
 res stands for resources. You can see that there are folders for each orientation and resolution. The names of the folders are really important. The folder names are how Android determines which images to use.
 
 With Cordova, each time you compile your app you will be overwriting the contents of these folders with the images that the `config.xml` points to, relative to the root project folder.
 
- 
+## Return
+
+[Back to Week 5 Module Home](./README.md)

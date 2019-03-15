@@ -44,7 +44,6 @@ MediaError.MEDIA_ERR_DECODE = 3
 MediaError.MEDIA_ERR_NONE_SUPPORTED = 4
 ```
 
-
 # Media Object Methods
 
 Once you have instantiated a `Media` object then you can use the provided methods to control the media file.
@@ -98,3 +97,7 @@ The reason why you want to access the microphone from your app should be put ins
     title="playing audio with the Cordova media plugin"
     url="https://www.youtube.com/embed/Fk-DpOnuvmM"
 />
+
+## Return
+
+[Back to Week 5 Module Home](./README.md)

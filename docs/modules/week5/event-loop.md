@@ -10,9 +10,13 @@ Consider this code sample:
 
 ```js
 function printing() {
-  console.log(1); 
-  setTimeout(function() { console.log(2); }, 1000); 
-  setTimeout(function() { console.log(3); }, 0); 
+  console.log(1);
+  setTimeout(function() {
+    console.log(2);
+  }, 1000);
+  setTimeout(function() {
+    console.log(3);
+  }, 0);
   console.log(4);
 }
 
@@ -23,7 +27,7 @@ What order would you expect to see the numbers 1, 2, 3, and 4 appear in the cons
 
 The correct answer is - 1, 4, 3, 2.
 
-1 makes sense being at the top of the function. 
+1 makes sense being at the top of the function.
 
 2 makes sense because there is a delay of a full second before that function runs.
 
@@ -31,7 +35,7 @@ The correct answer is - 1, 4, 3, 2.
 
 4 appears after number 1 because 2 and 3 have been added to the queue for later execution.
 
-Think back to the [page about JavaScript Timers](../week3/timers.md) and the result of putting zero as the delay. 
+Think back to the [page about JavaScript Timers](../week3/timers.md) and the result of putting zero as the delay.
 
 Now, instead of writing a lengthy explanation of what the JS Event Loop is and how it works, instead I will ask that you watch these videos
 
@@ -42,3 +46,6 @@ Now, instead of writing a lengthy explanation of what the JS Event Loop is and h
 
 from the JSConf EU 2014 conference, where Philip Roberts does a great job explaining all aspects of the JS Event Loop. It is 26 mins long. Try to watch it all in one sitting.
 
+## Return
+
+[Back to Week 5 Module Home](./README.md)

@@ -7,7 +7,10 @@ This website describes all the details of the new `<meta>` tag that appears in a
 If you look inside the `<head>` of your `index.html` file, from your Cordova www folder then you will see this:
 
 ```html
-<meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
+<meta
+  http-equiv="Content-Security-Policy"
+  content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *"
+/>
 ```
 
 This meta tag defines what type of content can be loaded from which sources.
@@ -41,3 +44,7 @@ There are others as well that you can find on the CSP website, but these are the
 `*.example.com` would allow any subdomain from example.com to be used.
 
 `https:` would allow anything being loaded over https.
+
+## Return
+
+[Back to Week 3 Module Home](./README.md)

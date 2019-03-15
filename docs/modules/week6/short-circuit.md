@@ -14,7 +14,7 @@ Let's consider this if statement that is comparing multiple conditions.
 let a = 5;
 let b = 10;
 let c = 20;
-if( a > 1  || b > 30 || c > 10 ){
+if (a > 1 || b > 30 || c > 10) {
   //this code runs if ANY of the three comparisons are true
 }
 ```
@@ -24,12 +24,12 @@ Since we are using `OR` operators between all three tests the interpreter stops 
 If there is an AND operator then the conditions on either side of the AND will both be tested before moving on.
 
 ```js
-if( a > 1 && b > 30 || c > 10 ){
+if ((a > 1 && b > 30) || c > 10) {
   //this code will run because...
 }
 ```
 
-In this second if statement all three conditions are tested. The AND forces the interpreter to look at both `a > 1` as well as `b > 30`. `b` is not greater than 30, so this test fails. The `c > 10` test passes and then because of the `OR`, the whole if statement passes. 
+In this second if statement all three conditions are tested. The AND forces the interpreter to look at both `a > 1` as well as `b > 30`. `b` is not greater than 30, so this test fails. The `c > 10` test passes and then because of the `OR`, the whole if statement passes.
 
 However, is it passing because:
 
@@ -40,12 +40,12 @@ However, is it passing because:
 This lack of clarity is why you should use parentheses to group your tests the way you intend.
 
 ```js
-if( (a > 1 && b > 30) || c > 10){
+if ((a > 1 && b > 30) || c > 10) {
   //this passes because of c being greater than 10
 }
 ```
 
-Grouping your tests with parentheses and then putting them in the most likely order to pass is one type of short-circuiting. 
+Grouping your tests with parentheses and then putting them in the most likely order to pass is one type of short-circuiting.
 
 ## Variable Assignment Short-circuiting
 
@@ -59,7 +59,7 @@ function createMicrobrewery(name) {
   if (name) {
     breweryName = name;
   } else {
-    breweryName = 'Hipster Brew Co.';
+    breweryName = "Hipster Brew Co.";
   }
 }
 ```
@@ -68,11 +68,11 @@ This is the situation that we described but it is a lot of code to do a simple t
 
 ```js
 function createMicrobrewery(name) {
-  const breweryName = name || 'Hipster Brew Co.'
+  const breweryName = name || "Hipster Brew Co.";
 }
 ```
 
-This function does the exact same thing but uses short-circuiting. 
+This function does the exact same thing but uses short-circuiting.
 
 By putting the OR operator between the two values we are forcing the JavaScript interpreter to make a decision about which value to assign to the constant breweryName.
 
@@ -96,8 +96,11 @@ let f = d || e;
 
 The variable `f` will be assigned the value 7. Both `d` and `e` will be examined.
 
- <YouTube
+<YouTube
     title="Logical Short Circuiting"
     url="https://www.youtube.com/embed/MR0ohAODlOI"
  />
- 
+
+## Return
+
+[Back to Week 6 Module Home](./README.md)

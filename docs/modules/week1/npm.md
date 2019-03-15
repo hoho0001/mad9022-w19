@@ -49,11 +49,11 @@ A basic `package.json` file looks like this:
 ```
 
 Some important properties in the file are:
+
 - `name` the name of the project;
 - `version` the version number of the project
 - `devDependencies` the npm modules that will be installed when you run `npm install`. The property label is the name of the package. The value is the semantic version number. See the resources section below for more details about semantic versioning.
 - `scripts` a list of commands that you can run. You would write `npm run` followed by the label in front of the command. In the sample above the label is `abc`.
-
 
 ## Adding Dependencies
 
@@ -65,7 +65,7 @@ When we add an npm module to the project we can just run the install command (or
 npm i bootstrap
 ```
 
-This will add the bootstrap module to the `node_modules` folder and it will be available to use in the current project. However, in older versions of npm, nothing is changed in the `package.json` file. New versions of npm will save to the `dependencies` section by default. To add it to the `package.json` file we need to add either `--save-prod` or `--save-dev` to the end of the command. 
+This will add the bootstrap module to the `node_modules` folder and it will be available to use in the current project. However, in older versions of npm, nothing is changed in the `package.json` file. New versions of npm will save to the `dependencies` section by default. To add it to the `package.json` file we need to add either `--save-prod` or `--save-dev` to the end of the command.
 
 ```
 npm i bootstrap --save
@@ -78,7 +78,6 @@ npm i webpack -D
 
 The first three lines in the example above will all save the package entry in the `dependencies` section. The last two lines will save the package entry in the `devDependencies` section.
 
-
 ## Adding Scripts
 
 Inside the scripts section of the `package.json` file we can add anything that we would type and run on the command line. We then give it a label so we can make it run with `npm run`.
@@ -87,7 +86,7 @@ If you want to run multiple commands you can put an `&&` between the commands.
 
 The sample in the `package.json` above is `mkdir abc && cd abc`. This will create a directory called `abc` and then navigate into that directory.
 
-When you create a default `package.json` file you will be given a script with the label `test`. It runs the command `echo \"Error: no test specified\" && exit 1`.  The `exit 1` part at the end will finish the script with an error message. Change the exit value to zero to finish without an error. The `echo` command will write something out on the command line.
+When you create a default `package.json` file you will be given a script with the label `test`. It runs the command `echo \"Error: no test specified\" && exit 1`. The `exit 1` part at the end will finish the script with an error message. Change the exit value to zero to finish without an error. The `echo` command will write something out on the command line.
 
 ## NPX
 
@@ -100,7 +99,6 @@ npx cowsay 'hello'
 ```
 
 This will load cowsay into memory and run it while passing `hello` as a parameter to the cowsay module.
-
 
 ## Running Node from the CLI
 
@@ -118,7 +116,6 @@ node
 
 Then you will have a node terminal open. You can run any JavaScript commands you want here just like the interactive browser console. To exit, hold the Control key and press C `CTRL+C`.
 
-
 ## Video Tutorials
 
 #### NPM Fundamentals for Managing Projects
@@ -135,7 +132,6 @@ Then you will have a node terminal open. You can run any JavaScript commands you
   url="https://www.youtube.com/embed/mpkC6MmKgsQ" 
   />
 
-
 ## Other Resources
 
 - [NodeJS website](https://nodejs.org/en/)
@@ -143,3 +139,7 @@ Then you will have a node terminal open. You can run any JavaScript commands you
 - [Semantic Versioning website](https://semver.org/)
 
 - [Lynda.com course on NPM scripts](https://www.lynda.com/NPM-tutorials/Welcome/495275/536120-4.html)
+
+## Return
+
+[Back to Week 1 Module Home](./README.md)

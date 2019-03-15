@@ -14,7 +14,6 @@ brew install yarn
 
 To install Yarn on Windows we need to download the `.msi` file and run the installation program from [this webpage](https://yarnpkg.com/en/docs/install#windows-stable).
 
-
 ## Usage
 
 To convert a folder into a Node project with Yarn (the equivalent of `npm init`):
@@ -36,7 +35,7 @@ Adding the `--dev` option will add the package to the `package.json` file as a d
 
 ## Global or Version Specific Installs
 
-To globally install a package with Yarn 
+To globally install a package with Yarn
 
 ```
 yarn global add <pkg>
@@ -60,3 +59,6 @@ yarn add cowsay@1.4.0
     url="https://www.youtube.com/embed/223uxFCu74s"
 />
 
+## Return
+
+[Back to Week 1 Module Home](./README.md)

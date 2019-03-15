@@ -18,3 +18,7 @@ When adding the Geolocation plugin to your project, if you are using it on iOS t
 ```
 
 Inside the `<string>` element you put your description for why you want geolocation permission in the app. This is just like the Camera permission requirement for iOS.
+
+## Return
+
+[Back to Week 7 Module Home](./README.md)

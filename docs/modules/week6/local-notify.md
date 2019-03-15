@@ -175,3 +175,7 @@ You can change the target build version of the API in this file too.
   title="Local Notification Plugin"
   url="https://www.youtube.com/embed/pSjbcsDT2PM"
 />
+
+## Return
+
+[Back to Week 6 Module Home](./README.md)

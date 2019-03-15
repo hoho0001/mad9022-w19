@@ -386,3 +386,7 @@ window.requestFileSystem(LocalFileSystem.PERSISTENT, 0, function(fs) {
 
 [Cordova File plugin page](https://cordova.apache.org/docs/en/8.x/reference/cordova-plugin-file/index.html)
 [File Storage on Android](https://developer.android.com/guide/topics/data/data-storage.html)
+
+## Return
+
+[Back to Week 8 Module Home](./README.md)

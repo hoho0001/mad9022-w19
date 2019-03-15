@@ -7,8 +7,8 @@ Up until recently, when you declared a function you would create the number of p
 As part of the ES6 update to JavaScript, we now have the ability to provide default values for function parameters.
 
 ```js
-function isAdmin(name, admin=false){
-  if(admin){
+function isAdmin(name, admin = false) {
+  if (admin) {
     console.log("ADMIN:", name);
   }
 }
@@ -17,10 +17,10 @@ function isAdmin(name, admin=false){
 The above function could be called now, either with or without the admin value.
 
 ```js
-isAdmin("Dean");            //no output
-isAdmin("Sam", false);      //no output
-isAdmin("Castiel", true);   //ADMIN: Castiel
-``` 
+isAdmin("Dean"); //no output
+isAdmin("Sam", false); //no output
+isAdmin("Castiel", true); //ADMIN: Castiel
+```
 
 <YouTube
   title="Function default params"
@@ -32,3 +32,7 @@ isAdmin("Castiel", true);   //ADMIN: Castiel
 [https://www.sitepoint.com/es6-default-parameters/](https://www.sitepoint.com/es6-default-parameters/)
 
 [https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Default_parameters](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Default_parameters)
+
+## Return
+
+[Back to Week 5 Module Home](./README.md)

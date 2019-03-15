@@ -2,7 +2,7 @@
 
 ## The Evolution of Moment.js
 
-There is a library for working with Time and Dates in JavaScript which has been the most used library for enhancing what vanilla JavaScript can do. It is known as `Moment.js`. [MomentJS Library](http://momentjs.com/).  There is a second JavaScript library that needs to be added if you want to include support for all the World's timezones and languages [Moment Timezone](http://momentjs.com/timezone/).
+There is a library for working with Time and Dates in JavaScript which has been the most used library for enhancing what vanilla JavaScript can do. It is known as `Moment.js`. [MomentJS Library](http://momentjs.com/). There is a second JavaScript library that needs to be added if you want to include support for all the World's timezones and languages [Moment Timezone](http://momentjs.com/timezone/).
 
 Here is a CodePen Sample using Moment.js.
 
@@ -31,3 +31,7 @@ This video is a fairly thorough tutorial on the features in Luxon. It is almost 
 [Luxon guides](https://moment.github.io/luxon/docs/index.html)
 
 [Luxon API reference](https://moment.github.io/luxon/docs/identifiers.html)
+
+## Return
+
+[Back to Week 6 Module Home](./README.md)

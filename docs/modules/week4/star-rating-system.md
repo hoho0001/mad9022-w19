@@ -21,8 +21,8 @@ These are the characters numbers for the stars.
 If you need to use one of these unicode values in your CSS, for the value of your content property then just wrap the number inside quotation marks with a backslash at the start. Like this:
 
 ```css
-element::before{
-  content: '\2605';
+element::before {
+  content: "\2605";
   display: inline;
 }
 ```
@@ -31,14 +31,13 @@ The CSS content property is only allowed to be used inside the `::before` and `:
 
 Here is a CodePen showing them in use. Note how the size is controlled through the font-size property and the colour of the stars is controlled through the color property.
 
-
 <p class="codepen" data-height="265" data-theme-id="0" data-default-tab="html,result" data-user="mad-d" data-slug-hash="LNEMqN" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid black; margin: 1em 0; padding: 1em;" data-pen-title="mad9022 Rating Stars with Unicode characters">
   <span>See the Pen <a href="https://codepen.io/mad-d/pen/LNEMqN/">
   mad9022 Rating Stars with Unicode characters</a> by Mobile Application Design-Development (<a href="https://codepen.io/mad-d">@mad-d</a>)
   on <a href="https://codepen.io">CodePen</a>.</span>
 </p>
 <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
- 
+
 
 ## Scripting for Ratings
 
@@ -70,4 +69,6 @@ And here is a video tutorial on how to make a star rating system.
     url="https://www.youtube.com/embed/dPCj6Qkq13Y"
 />
 
- 
+## Return
+
+[Back to Week 4 Module Home](./README.md)

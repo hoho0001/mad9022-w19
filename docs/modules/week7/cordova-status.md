@@ -27,12 +27,16 @@ After the deviceready event fires and your app is running we can make the bar ap
 
 ```js
 if (StatusBar.isVisible) {
-    StatusBar.hide( );
-}else{
-    StatusBar.show( );
+  StatusBar.hide();
+} else {
+  StatusBar.show();
 }
-``` 
+```
 
 ## Resources & References
 
 [Cordova StatusBar Reference](https://cordova.apache.org/docs/en/latest/reference/cordova-plugin-statusbar/index.html)
+
+## Return
+
+[Back to Week 7 Module Home](./README.md)

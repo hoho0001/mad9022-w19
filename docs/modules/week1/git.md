@@ -23,7 +23,7 @@ If you want to keep a copy of your project on another computer (website), like G
 First you have to tell your local Git Project where the remote copy will sit. The URL of the remote copy of the project must exist for this to work. In other words, create the project on GitHub before doing this.
 
 ```
-git remote add origin http://github.com/my-user-name/my-repo-name.git 
+git remote add origin http://github.com/my-user-name/my-repo-name.git
 ```
 
 Sometimes you will need to change the URL of your remote project because the repo name gets changed or you entered the wrong value. We can change the remote url with this command:
@@ -66,12 +66,11 @@ The upload (PUSH) command will take your local code and try to overwrite the ver
 
 `master` is the name of the main branch of the project. If you are the only person working on the project then it is possible for you to only use this one branch.
 
-
 ## Supporting Resources
 
 ### Video Tutorials
 
-#### Git Introduction 
+#### Git Introduction
 
 <YouTube
   title="Learning Git Intro"
@@ -99,7 +98,6 @@ The upload (PUSH) command will take your local code and try to overwrite the ver
   url="https://www.youtube.com/embed/W7utItgBfN0"
 />
 
-
 #### GitHub Playlist Introduction
 
 <YouTube
@@ -109,11 +107,13 @@ The upload (PUSH) command will take your local code and try to overwrite the ver
 
 There are more Github videos in the playlist. You can find the link at the end of the video.
 
-
-
 ### Websites
 
 - [GitHub website](https://www.github.com/) : for free repo storage
 - [GitHub Education](https://education.github.com/pack) : for students to sign up and get free Private repos and other swag.
 - [Git website](https://git-scm.com/) : website of the official software that runs locally and behind-the-scenes on Github.
 - [Git documentation](https://git-scm.com/book/en/v2) : Free Guide to Git
+
+## Return
+
+[Back to Week 1 Module Home](./README.md)

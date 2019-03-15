@@ -7,7 +7,7 @@ Another new feature that ES6 brought to us for Function Parameters is the Rest O
 It allows us to capture an unknown number of parameters being sent to a function within a single variable.
 
 ```js
-function x(name, num, ...other){ 
+function x(name, num, ...other) {
   //the variable other is an array that will handle any number of additional parameters
 }
 ```
@@ -32,7 +32,7 @@ Similar to the Rest operator is the Spread operator.
 If you have a variable that holds an Array you can then use the spread operator in front of the variable name to make the variable appear as a series of values. It spreads out the values of the Array.
 
 ```js
-let first = ['a', 'b', 'c', 'd'];
+let first = ["a", "b", "c", "d"];
 let second = [1, 2, ...first, 3, 4];
 let third = [1, 2, first, 3, 4];
 ```
@@ -42,8 +42,7 @@ So, here we have two Arrays, "second" and "third", which are nearly the same. Th
 The values in these variables will be as follows:
 
 ```js
-[1, 2, 'a', 'b', 'c', 'd', 3, 4]     //contents of second
-[1, 2, [Array], 3, 4]                //contents of third
+[1, 2, "a", "b", "c", "d", 3, 4][(1, 2, [Array], 3, 4)]; //contents of second //contents of third
 ```
 
 Notice that the "third" Array has an Array as it's third item.
@@ -57,3 +56,7 @@ Notice that the "third" Array has an Array as it's third item.
   title="Spread, chaining methods, and shallow copies"
   url="https://www.youtube.com/embed/UJ4y7RtZLAY"
 />
+
+## Return
+
+[Back to Week 7 Module Home](./README.md)

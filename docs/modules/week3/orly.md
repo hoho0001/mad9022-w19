@@ -47,3 +47,7 @@ Here is a list of books that every web developer should have.
 <img alt="Zindex 1000000" src="../orly/zindex.jpg" style="flex-basis:30%; flex-grow:1; flex-shrink:0; height: auto; width: 200px; margin:0.5rem; outline:1px solid #333" />
 
 </section>
+
+## Return
+
+[Back to Week 3 Module Home](./README.md)

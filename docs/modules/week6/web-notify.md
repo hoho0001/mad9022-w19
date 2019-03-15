@@ -8,3 +8,7 @@ We can use the Web Notification API to show reminders to users about things on o
     title="Web Notifications"
     url="https://www.youtube.com/embed/EEhohSp0if4"
 />
+
+## Return
+
+[Back to Week 6 Module Home](./README.md)

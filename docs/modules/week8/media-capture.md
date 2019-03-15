@@ -6,3 +6,7 @@ This first tutorial explains how to use the `<input type="file" capture type="im
     title="Capturing Media on Mobile Devices"
     url="https://www.youtube.com/embed/dbrez37HlJM"
 />
+
+## Return
+
+[Back to Week 8 Module Home](./README.md)

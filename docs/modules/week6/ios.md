@@ -194,3 +194,8 @@ Put your own username in the command without the square brackets.
 ## References
 
 Here is the official Cordova Reference [for working with iOS](https://cordova.apache.org/docs/en/latest/guide/platforms/ios/index.html)
+
+## Return
+
+[Back to Week 6 Module Home](./README.md)
+[Back to Week 7 Module Home](../week7/README.md)

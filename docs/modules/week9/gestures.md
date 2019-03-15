@@ -9,3 +9,7 @@ At the same time you want to make sure that your script is not intefering with b
 To help you solve these problems I have created a framework called TinyShell to help you with the swipe and tap events. The framework also includes some basic styling for mobile pages. It is designed to work inside of a Cordova app. If you use it, keep watching the GitHub repo and the version number for updates to the script and styles.
 
 [See more about TinyShell](./tinyshell.md)
+
+## Return
+
+[Back to Week 9 Module Home](./README.md)

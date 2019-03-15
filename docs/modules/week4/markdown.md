@@ -37,7 +37,7 @@ This bunch of text is a paragraph
 
 There are many tutorials for how to write markdown.
 
-GitHub has a few of their own tutorials for getting started with markdown. 
+GitHub has a few of their own tutorials for getting started with markdown.
 
 - [Basic Syntax](https://help.github.com/articles/basic-writing-and-formatting-syntax/)
 - [Beyond the Basics](https://guides.github.com/features/mastering-markdown/)
@@ -51,3 +51,7 @@ Here are a couple of interactive tutorials on markdown:
 
 - [MarkDown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
 - [MarkDown PDF](/mad9022-w19/markdown_cheatsheet.pdf)
+
+## Return
+
+[Back to Week 4 Module Home](./README.md)

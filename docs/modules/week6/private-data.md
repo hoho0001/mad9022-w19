@@ -6,11 +6,11 @@ If we declare variables inside loops or functions with `let` or `const` then tho
 
 ```js
 function hello(msg) {
-    let name = 'Fred';
-    for(let i=0; i<10; i++){
-        console.log(i);
-        let temp = Math.random();
-    }
+  let name = "Fred";
+  for (let i = 0; i < 10; i++) {
+    console.log(i);
+    let temp = Math.random();
+  }
 }
 ```
 
@@ -21,12 +21,12 @@ After the function is finished running, there is NO way for code outside the fun
 Closures give us a way to remember variables after the enclosing scope is no longer being used. Closures will allow us to hang on to the value of any variable to be used later, while still preventing other code from access the value.
 
 ```js
-function outer(){
-    let privateThing = 'secret value';
-    return function (){
-        let num = Math.random();
-        console.log(privateThing, num);
-    }
+function outer() {
+  let privateThing = "secret value";
+  return function() {
+    let num = Math.random();
+    console.log(privateThing, num);
+  };
 }
 
 let saveForLater = outer();
@@ -37,9 +37,9 @@ saveForLater();
 In the example above, in the second last line, we are running the function `outer`, which will return the inner function. The inner function is a closure. It can access the variable `privateThing` and its value. When we run the final line it will log out the values of `privateThing` and `num`. However, if we were to add any of these lines:
 
 ```js
-console.log( privateThing );  //undefined
-console.log( saveForLater.privateThing );  //undefined
-console.log( outer.privateThing );          //undefined
+console.log(privateThing); //undefined
+console.log(saveForLater.privateThing); //undefined
+console.log(outer.privateThing); //undefined
 ```
 
 They will all fail. We can consider the variable `privateThing` a private variable held inside of the function `saveForLater`.
@@ -58,3 +58,6 @@ Another way that we can hide variables from other code is through using Getters 
     url="https://www.youtube.com/embed/kMNHAc7m_6A"
 />
 
+## Return
+
+[Back to Week 6 Module Home](./README.md)

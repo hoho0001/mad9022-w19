@@ -4,8 +4,8 @@ There are many ways to create a `Date` object. But it will always represent a si
 
 ```js
 let today = new Date(); //today will be an object that represents the current date and time in the browser
-let today1 = new Date(1549912008224);  //use a timestamp to create a Date object
-let today2 = new Date('March 17, 2018 12:00:00'); //create a Date object from a string
+let today1 = new Date(1549912008224); //use a timestamp to create a Date object
+let today2 = new Date("March 17, 2018 12:00:00"); //create a Date object from a string
 let today3 = new Date(2018, 2, 17, 12, 0, 0); // March 17, 2018 @ 12:00:00pm pass in the numbers for the date parts
 ```
 
@@ -22,14 +22,19 @@ You can also output the full date and/or time with one of these methods.
 
 ```js
 today.toString(); //the whole date, time, timezone, etc
-today.toDateString();  //just the date part In American English
+today.toDateString(); //just the date part In American English
 today.toTimeString(); //just the time part. In American English
 
 //output the time or date or both with localized and customized versions
-let options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
-today.toLocaleDateString('en-CA', options); //just the date localized
-today.toLocaleTimeString('fr-CA', options);  //just the time localized
-today.toLocaleString('de-DE', options);    //both date and time localized
+let options = {
+  weekday: "long",
+  year: "numeric",
+  month: "long",
+  day: "numeric"
+};
+today.toLocaleDateString("en-CA", options); //just the date localized
+today.toLocaleTimeString("fr-CA", options); //just the time localized
+today.toLocaleString("de-DE", options); //both date and time localized
 ```
 
 The basic workings of using the `Date` object are covered in this first video.
@@ -52,3 +57,7 @@ Finally, this last video looks at the new browser capabilities for localizing in
     title="Internationalization of Dates and Times"
     url="https://www.youtube.com/embed/_o2OHTwjtts"
 />
+
+## Return
+
+[Back to Week 6 Module Home](./README.md)

@@ -1,6 +1,6 @@
 # SQLite Working Sample
 
-This is a working sample of a main script from a Cordova App that goes through the basic steps for deviceready, and then into the check to see if the database exists, the creation and population of the tables. 
+This is a working sample of a main script from a Cordova App that goes through the basic steps for deviceready, and then into the check to see if the database exists, the creation and population of the tables.
 
 ```js
 let app = {
@@ -9,15 +9,15 @@ let app = {
     document.addEventListener("deviceready", start);
   },
   start: function(){
-    //plugins loaded. 
+    //plugins loaded.
     //add the listeners for navigation
     app.addNavListeners();
 
     //open /create the db
     app.db = window.sqlitePlugin.openDatabase({name: 'my.db',iosDatabaseLocation: 'default', androidLockWorkaround: 1});
     app.db.transaction(function(tx){
-      //tx represents the transaction object. queries are called on the transaction  
-      tx.executeSql('CREATE TABLE IF NOT EXISTS stuff(id INTEGER PRIMARY KEY AUTOINCREMENT, name TEXT)', [], 
+      //tx represents the transaction object. queries are called on the transaction
+      tx.executeSql('CREATE TABLE IF NOT EXISTS stuff(id INTEGER PRIMARY KEY AUTOINCREMENT, name TEXT)', [],
         function(result){
            //executeSql calls the success function first
            console.log("CREATE statement worked");
@@ -68,3 +68,7 @@ Both the `executeSql` method and the `transaction` method have a `success` and a
 The `executeSql callbacks` are the ones that tell you if your individual queries worked or not.
 
 Remember, when you run a `SELECT statement` that returns no matches, that is still considered a success. You can then access the `result.rows.length` value to find out if one or more records were returned.
+
+## Return
+
+[Back to Week 9 Module Home](./README.md)

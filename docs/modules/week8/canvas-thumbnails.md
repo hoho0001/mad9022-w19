@@ -6,3 +6,7 @@ Be sure to refer back to the [Canvas Page from Week 1](../week1/canvas.md). At t
     title="Video Frame Grabs and Binary Files on Canvas"
     url="https://www.youtube.com/embed/_2SvAepbCSg"
 />
+
+## Return
+
+[Back to Week 8 Module Home](./README.md)

@@ -140,3 +140,7 @@ This will call a method to locate where Java is installed. This way, as you upda
 ## References
 
 Here is the Cordova Reference [for working with the Android Platform](https://cordova.apache.org/docs/en/latest/guide/platforms/android/)
+
+## Return
+
+[Back to Week 3 Module Home](./README.md)

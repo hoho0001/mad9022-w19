@@ -7,12 +7,12 @@ Let's say you have an Object called `character` and it has a property called `he
 ```js
 const character = {};
 
-Object.defineProperty(character, 'name', {
-  value: 'Rex',
+Object.defineProperty(character, "name", {
+  value: "Rex",
   writable: false
 });
 
-Object.defineProperty(character, 'health', {
+Object.defineProperty(character, "health", {
   value: 10,
   writable: true
 });
@@ -56,3 +56,7 @@ When you create an Object and give it a property, unless you indicate otherwise,
 - [MDN Object.getPrototypeOf()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/getPrototypeOf)
 - [MDN Object.is()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/is)
 - [MDN Object.prototype.isPrototypeOf()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/isPrototypeOf)
+
+## Return
+
+[Back to Week 8 Module Home](./README.md)

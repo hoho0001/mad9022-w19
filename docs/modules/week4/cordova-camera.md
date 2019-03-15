@@ -6,7 +6,7 @@ Cordova has a Camera plugin that allows us to use JavaScript to take and save pi
 cordova plugin add cordova-plugin-camera
 ```
 
-There are not that many methods and properties to learn. However, there are a few gotchas and things to be aware of. 
+There are not that many methods and properties to learn. However, there are a few gotchas and things to be aware of.
 
 First, iOS Simulators will **NOT** allow you to access the camera.
 
@@ -64,15 +64,14 @@ let options = {
   allowEdit: true,
   targetWidth: 300,
   targetHeight: 300
-}
+};
 ```
-
 
 ## Potential Issues
 
-When taking a picture on Android, it is possible for some devices to lack sufficient memory to keep your app in the background while taking and saving a picture. 
+When taking a picture on Android, it is possible for some devices to lack sufficient memory to keep your app in the background while taking and saving a picture.
 
-All Cordova apps have `pause` and `resume` events that we can listen for. When an app is shut down by the user or the system it will fire the `pause` event. When it is brought back to life, the `resume` event will fire. 
+All Cordova apps have `pause` and `resume` events that we can listen for. When an app is shut down by the user or the system it will fire the `pause` event. When it is brought back to life, the `resume` event will fire.
 
 For Cameras taking pictures it means we might need to use the resume event to capture the image coming back from the Camera app and then pass it to our Camera success callback ourselves.
 
@@ -88,5 +87,9 @@ Here is [an example of this code](https://cordova.apache.org/docs/en/dev/guide/p
 There is also a method on iOS that you can call to clean up temporary image files that may have been created when you are taking a pictures and returning a file URI.
 
 ```js
-navigator.camera.cleanup( successCallback, errorCallback );
+navigator.camera.cleanup(successCallback, errorCallback);
 ```
+
+## Return
+
+[Back to Week 4 Module Home](./README.md)

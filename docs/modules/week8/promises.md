@@ -137,3 +137,7 @@ Here is a short YouTube Video about Promises, using the `fetch( )` method
     title="Fun Fun Function Promises"
     url="https://www.youtube.com/embed/2d7s3spWAzo"
 />
+
+## Return
+
+[Back to Week 8 Module Home](./README.md)

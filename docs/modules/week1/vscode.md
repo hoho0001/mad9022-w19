@@ -18,7 +18,6 @@ Just like in Brackets, there are hundreds of Extensions available for VS Code. V
 
 To view the installed ones or search for new ones, click the bottom square icon in the left hand menu. Then you can click the three dots at the top of the list of extensions to see all the options.
 
-
 ## Other Resources and Tutorials
 
 - [Level Up Tutorials](https://www.leveluptutorials.com/tutorials/vscode-tutorials/git-integration)
@@ -26,5 +25,6 @@ To view the installed ones or search for new ones, click the bottom square icon 
 - [Some CSS Extensions for VS Code](https://scotch.io/bar-talk/6-awesome-css-extensions-for-vs-code)
 - [VS Code Cheatsheet](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-macos.pdf)
 
+## Return
 
-
+[Back to Week 1 Module Home](./README.md)

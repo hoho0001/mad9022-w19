@@ -28,16 +28,16 @@ Inside our Request options we define the mode like this:
 
 ```js
 let options = {
-    method: "GET",
-    mode: "cors"
-}
+  method: "GET",
+  mode: "cors"
+};
 ```
 
 The mode can be `cors`, `same-origin`, or `no-cors`. If we set it to `cors` then we are telling the browser to look for the proper permissions to come back from the remote webserver telling us that CORS is allowed. If we set it to `same-origin` then we are telling the browser that it should prevent the JavaScript from making calls to any domain except the one where the HTML came from. `no-cors` tries to make an opaque attempt to get external sources but does not currently work within the global scope of the page.
 
 ## Behind the Scenes
 
-When you make a CORS AJAX call from your JavaScript code there are actually two requests being made. An initial request called a pre-flight request gets sent from the browser to the server. This request includes a header providing the domain from which the request is being made. 
+When you make a CORS AJAX call from your JavaScript code there are actually two requests being made. An initial request called a pre-flight request gets sent from the browser to the server. This request includes a header providing the domain from which the request is being made.
 
 For the communication between the server and the browser to finish properly, the server needs to respond to the initial preflight request with a Response that includes a header called `Access-Control-Allow-Origin`. The value for this header must match exactly your URL or be set to a wildcard.
 
@@ -51,14 +51,16 @@ This will create the required header to allow for cross origin requests.
 
 The `.htaccess` file must be in the folder or a parent folder for the resource being requested.
 
- 
-
 ## What Gets Restricted
 
 There are actually quite a few things that can get restricted when requesting resources over CORS. For our immediate purposes, it is important to note that a webpage making a request from edumedia.ca to darksky.net would not be allowed to use the JSON data.
 
 If you set the mode to `same-origin` or `no-cors` then the request would be entirely rejected.
 
-If you set the mode to `cors` then the request would be sent and the JSON data returned but we would not be allowed to use the data in our JavaScript. 
+If you set the mode to `cors` then the request would be sent and the JSON data returned but we would not be allowed to use the data in our JavaScript.
 
 [MDN CORS reference](https://developer.mozilla.org/en-US/docs/Web/HTTP/Access_control_CORS)
+
+## Return
+
+[Back to Week 3 Module Home](./README.md)

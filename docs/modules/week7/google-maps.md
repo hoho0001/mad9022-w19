@@ -111,3 +111,7 @@ This tutorial covers how to get your API key and create your first Google Map.
 [Maps Distance and Direction API](https://developers.google.com/maps/documentation/distance-matrix/)
 
 [Localizing the Map in different languages](https://developers.google.com/maps/documentation/javascript/localization)
+
+## Return
+
+[Back to Week 7 Module Home](./README.md)

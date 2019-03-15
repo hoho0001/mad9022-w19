@@ -4,8 +4,6 @@ A Single Page Application, at its most basic is just a single HTML file with CSS
 
 It will have multiple areas inside the `<body>` element which are hidden or shown at different times. As the user clicks on links you need to decide which of these areas to show or hide. Typically this is done by adding or removing CSS classNames which will take care of hiding areas as needed.
 
-
-
 ## CSS Page Transitions
 
 When working with CSS animations we need to be aware that some properties have a much higher penalty, in terms of performance.
@@ -25,7 +23,7 @@ The JavaScript portion of this CodePen is using an IIFE version of the init scri
 var app = (function(){
  let pages = [];
  let links = [];
- 
+
  document.addEventListener("DOMContentLoaded", function(){
    pages = document.querySelectorAll('[data-page]');
    links = document.querySelectorAll('[data-role="link"]');
@@ -34,7 +32,7 @@ var app = (function(){
      link.addEventListener("click", navigate)
    });
  });
- 
+
  function navigate(ev){
    ev.preventDefault();
    let id = ev.currentTarget.href.split("#")[1];
@@ -43,11 +41,11 @@ var app = (function(){
        page.classList.add('active');
      }else{
        page.classList.remove('active');
-     } 
+     }
    });
    return false;
  }
- 
+
  return {
      pages,
      links
@@ -55,7 +53,7 @@ var app = (function(){
 })();
 
 //at this point we could use things like app.pages or app.links
-``` 
+```
 
 The navigate function here works with any number of page links. The DOMContentLoaded function will find all the pages and all the links and save them in the pages and links variables.
 
@@ -70,14 +68,17 @@ This example is using the href attribute in the anchor tag. An alternate approac
 This example would be used to target a page with the id "home".
 
 ```html
-<section data-page="home" id="home">
+<section data-page="home" id="home"></section>
 ```
 
 By using the data-target property in the anchor tag, we could also target those links with our CSS in a way that would avoid other links on our pages.
 
 ```css
-a[data-target]{
+a[data-target] {
   /* all our main nav links would be styled by this selector */
 }
 ```
 
+## Return
+
+[Back to Week 3 Module Home](./README.md)

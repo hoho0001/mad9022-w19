@@ -2,7 +2,7 @@
 
 ## Units of Measure
 
-Most people are used to using degrees to measure angles. A triangle contains 180° and a circle has 360°. However, there is another unit of measure that is used for Angles. This other unit is called a radian. In a triangle there are approximately 3.1415 radians (π radians) and in a circle there are approximately 6.283 radians (2π  radians).
+Most people are used to using degrees to measure angles. A triangle contains 180° and a circle has 360°. However, there is another unit of measure that is used for Angles. This other unit is called a radian. In a triangle there are approximately 3.1415 radians (π radians) and in a circle there are approximately 6.283 radians (2π radians).
 
 Here is a quick video from Khan Academy that talks about radians. If my explaination is not clear please watch this: [Khan Academy Lesson on Radians](https://www.khanacademy.org/math/trigonometry/basic-trigonometry/radians_tutorial/v/introduction-to-radians)
 
@@ -30,7 +30,7 @@ When we want to calculate a distance between two points and we know what the ang
 
 Let's use this image as reference for the last part of this explanation. The three corners are labelled with the captial letters - A, B, and C. The sides are labelled with lowercase letters - a, b, and c. The main angle, at the center of the circle, is called theta - θ
 
-![Trig Image](./trig-2.jpg) 
+![Trig Image](./trig-2.jpg)
 
 In this image there is a circle whose radius is set to one. If we create a right angle triangle using the radius of 1 as our hypotenuse then we can use our SOH CAH TOA calcuations from above to calculate the length of the line along any angle.
 
@@ -39,13 +39,13 @@ Inside the circle, whose radius is 1, we have created a right angle triangle. Th
 To calculate the length of the line segments Ca or ba we will use:
 
 ```
-Sin( θ ) = O / H  
+Sin( θ ) = O / H
 ```
 
 and
 
 ```
-Cos( θ ) = A / H 
+Cos( θ ) = A / H
 ```
 
 We know that the Hypotenuse (H) will always be 1. Divide any number by 1 and you are left with the original number.
@@ -66,8 +66,8 @@ The line segment ba is our distance along the Y axis to get from point C to poin
 In Javascript we would write this as:
 
 ```js
-var rad = 1.2;  //Our angle is measured in radians. I randomly picked 1.2 radians.
-var deltaX = Math.cos( rad);
+var rad = 1.2; //Our angle is measured in radians. I randomly picked 1.2 radians.
+var deltaX = Math.cos(rad);
 var deltaY = Math.sin(rad);
 ```
 
@@ -77,16 +77,16 @@ So, to get from point C, which we will refer to as point `(0,0)` to point b we n
 
 So, we know how to calculate the length from C to b. However, not every line we want will have a hypotenuse of one.
 
-The solution for longer lines is actually quite simple. Referring back to our document lets say we wanted to go from point C to point B. We need to calculate the lengths of CA and AB. 
+The solution for longer lines is actually quite simple. Referring back to our document lets say we wanted to go from point C to point B. We need to calculate the lengths of CA and AB.
 
 Since our Angle θ never changes it means that the ratio between the three sides will not change either. If CB is 2.5 times as long as Cb that means that CA is 2.5 times longer than Ca and AB is 2.5 times longer than ab.
 
 If you know that you want to have the line CB be 80px long and you know that Cb is always 1 then just multiply our earlier values for deltaY and deltaX by 80 and we have our final answer for the coordinates of point B.
 
 ```js
-var rad = 1.2;  //Our angle is measured in radians. I randomly picked 1.2 radians.
+var rad = 1.2; //Our angle is measured in radians. I randomly picked 1.2 radians.
 var distance = 80;
-var deltaX = Math.cos( rad) * distance;
+var deltaX = Math.cos(rad) * distance;
 var deltaY = Math.sin(rad) * distance;
 ```
 
@@ -100,36 +100,36 @@ Last step is doing this on the Canvas. Let's say that we want to draw a pie-wedg
 <canvas id="pie" height="400" width="400"></canvas>
 
 <script>
-    var canvas = document.querySelector("#pie");
-    var ctx = canvas.getContext("2d");
-    var cx = 200;
-    var cy = 200;  //center point of canvas, middle of our circle
-    var radius = 50;
+  var canvas = document.querySelector("#pie");
+  var ctx = canvas.getContext("2d");
+  var cx = 200;
+  var cy = 200; //center point of canvas, middle of our circle
+  var radius = 50;
 
-    ctx.fillStyle="rgb(160,204,20)";
-    ctx.moveTo(cx, cy);
-    ctx.beginPath();
-    ctx.arc(cx, cy, radius, 1.1, 2.5, false);  //arc from 1.1 to 2.5 radians.
-    ctx.lineTo(cx, cy);
-    ctx.fill();
-    //arc is done now
+  ctx.fillStyle = "rgb(160,204,20)";
+  ctx.moveTo(cx, cy);
+  ctx.beginPath();
+  ctx.arc(cx, cy, radius, 1.1, 2.5, false); //arc from 1.1 to 2.5 radians.
+  ctx.lineTo(cx, cy);
+  ctx.fill();
+  //arc is done now
 
-    //now draw the line
-    var midAngle = (1.1 + 2.5)/2;
-    ctx.save();
-    ctx.translate(cx, cy);   //make the middle of the circle the (0,0) point
-    //calculate the new end point
+  //now draw the line
+  var midAngle = (1.1 + 2.5) / 2;
+  ctx.save();
+  ctx.translate(cx, cy); //make the middle of the circle the (0,0) point
+  //calculate the new end point
 
-    ctx.strokeStyle = "#333";
-    ctx.lineWidth = 2;
-    ctx.beginPath();
-    ctx.moveTo(0,0);
-    var dx = Math.cos(midAngle) * (radius + 50);
-    var dy = Math.sin(midAngle) * (radius + 50);
-    ctx.lineTo(dx, dy);
-    ctx.stroke();
+  ctx.strokeStyle = "#333";
+  ctx.lineWidth = 2;
+  ctx.beginPath();
+  ctx.moveTo(0, 0);
+  var dx = Math.cos(midAngle) * (radius + 50);
+  var dy = Math.sin(midAngle) * (radius + 50);
+  ctx.lineTo(dx, dy);
+  ctx.stroke();
 
-    ctx.restore(); //put the (0,0) point back where it was
+  ctx.restore(); //put the (0,0) point back where it was
 </script>
 ```
 
@@ -153,11 +153,16 @@ let cy = 300; //center of the circle
 let x = 390; //the x coord on the circle
 let y = 320; //the y coord on the circle
 
-let theta1 = Math.atan( (y-cy) / (x-cx) ); //version 1 divides the y difference by the x difference
+let theta1 = Math.atan((y - cy) / (x - cx)); //version 1 divides the y difference by the x difference
 
-let theta2 = Math.atan2( x-cx, y-cy ); //version 2 just accepts the two differences
+let theta2 = Math.atan2(x - cx, y - cy); //version 2 just accepts the two differences
 
 //the values of theta1 and theta2 should be the exact same.
 //this is your angle, in radians
 ```
+
 Once you have that angle, you can rotate something to face the direction of that (x, y) point.
+
+## Return
+
+[Back to Week 2 Module Home](./README.md)

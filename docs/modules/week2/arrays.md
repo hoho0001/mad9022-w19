@@ -10,14 +10,14 @@ Thankfully, we have a solution. `sort()` accepts an optional parameter - a funct
 /*****  custom sort   ******/
 let arr = [1, 4, 3, 6, 2, 12, 22, 13, 18];
 
-arr.sort( (a, b) => {
-    if( a > b){
-        return 1;
-    }else if( b > a){
-        return -1;
-    }else{
-        return 0;
-    }
+arr.sort((a, b) => {
+  if (a > b) {
+    return 1;
+  } else if (b > a) {
+    return -1;
+  } else {
+    return 0;
+  }
 });
 ```
 
@@ -42,8 +42,8 @@ Note that the original array will be modified.
 If you want to loop through an Array and do something with each item then we would use the `forEach()` method.
 
 ```js
-myArray.forEach( (item, index, arr) => {
-    console.log(`${item} is the value at position ${index}`);
+myArray.forEach((item, index, arr) => {
+  console.log(`${item} is the value at position ${index}`);
 });
 ```
 
@@ -55,10 +55,10 @@ myArray.forEach( (item, index, arr) => {
 If you want to create a new Array which is the same length as the original Array, and based in some way on the values of the original array, then we would use the `map()` method.
 
 ```js
-let myArray = ['abc', 'def', 'ghi', 'jkl'];
-let newArr = myArray.map( (item, index, arr) => {
-    console.log(`${item} is the value at position ${index}`);
-    return item.toUpperCase();
+let myArray = ["abc", "def", "ghi", "jkl"];
+let newArr = myArray.map((item, index, arr) => {
+  console.log(`${item} is the value at position ${index}`);
+  return item.toUpperCase();
 });
 ```
 
@@ -70,14 +70,14 @@ let newArr = myArray.map( (item, index, arr) => {
 If you want to create a new Array which holds a selected group of values from the original Array which all meet some common requirement, then we use the `filter()` method.
 
 ```js
-let myArray = ['abc', 'def', 'ghi', 'jkl'];
-let newArr = myArray.filter( (item, index, arr) => {
-    console.log(`${item} is the value at position ${index}`);
-    if(item.indexOf('a') > -1 || item.indexOf('e') > -1 ){
-        return true;
-    }else{
-        return false;
-    }
+let myArray = ["abc", "def", "ghi", "jkl"];
+let newArr = myArray.filter((item, index, arr) => {
+  console.log(`${item} is the value at position ${index}`);
+  if (item.indexOf("a") > -1 || item.indexOf("e") > -1) {
+    return true;
+  } else {
+    return false;
+  }
 });
 ```
 
@@ -90,9 +90,9 @@ If you want to calculate a single value, like an average or a sum, based on the 
 
 ```js
 let nums = [1, 2, 3, 4, 5, 6, 7, 8, 9];
-let total = nums.reduce( (accumulator, currentValue)=>{
-    return accumulator + currentValue;
-}, 0)
+let total = nums.reduce((accumulator, currentValue) => {
+  return accumulator + currentValue;
+}, 0);
 ```
 
 <YouTube 
@@ -100,7 +100,7 @@ let total = nums.reduce( (accumulator, currentValue)=>{
     url="https://www.youtube.com/embed/6_XzV25rkcE"
 />
 
-The cool thing about `map()`, `filter()`, and `reduce()` is that they can be chained together to simplify your code. The reason we can chain them together is that they all return a copy of the Array. 
+The cool thing about `map()`, `filter()`, and `reduce()` is that they can be chained together to simplify your code. The reason we can chain them together is that they all return a copy of the Array.
 
 <YouTube
     title="Chaining Array Methods"
@@ -176,3 +176,7 @@ When a method makes a change to the original values stored inside an Array, the 
     title="destructive methods"
     url="https://www.youtube.com/embed/QlUFzhWiD4I"
 />
+
+## Return
+
+[Back to Week 2 Module Home](./README.md)
