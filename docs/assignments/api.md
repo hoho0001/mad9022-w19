@@ -6,4 +6,4 @@ Please send an email to both Steve (griffis@algonquincollege.com) and Robert (mc
 
 The details and requirements for the API will be covered in MAD9124. The functionality of the API will be graded in that course. The front-end functionality, design, and usability will be graded in MAD9022.
 
-... More details coming soon ...
+**More details coming soon**
