@@ -48,7 +48,7 @@ Here is a list of common RegExp patterns that can be used for validating user in
 
 ```
 /^#?([a-f0-9]{6}|[a-f0-9]{3})$/
-``` 
+```
 
 ### Credit Card and IMEI number validation
 
@@ -57,15 +57,22 @@ Another common type of pattern based validation is the validation of credit card
 Here is a JavaScript function that users Regex to check for numbers and then uses the LUHN-10 algorithm to validate that the number provided matches the proper pattern.
 
 ```js
-let luhn_validate = function(imei){
-    return !/^\d+$/.test(imei) || (imei.split('').reduce(function(sum, d, n){ 
-            return n===(imei.length-1)
-                   ? 0 
-                   : sum + parseInt((n%2)? d: [0,2,4,6,8,1,3,5,7,9][d]);
-        }, 0)) % 10 == 0;
+let luhn_validate = function(imei) {
+  return (
+    !/^\d+$/.test(imei) ||
+    imei.split("").reduce(function(sum, d, n) {
+      return n === imei.length - 1
+        ? 0
+        : sum + parseInt(n % 2 ? d : [0, 2, 4, 6, 8, 1, 3, 5, 7, 9][d]);
+    }, 0) %
+      10 ==
+      0
+  );
 };
 ```
 
 Want to read more about [how the LUHN algorithm works?](https://en.wikipedia.org/wiki/Luhn_algorithm)
 
- 
+## Return
+
+[Back to Week 12 Module Home](./README.md)

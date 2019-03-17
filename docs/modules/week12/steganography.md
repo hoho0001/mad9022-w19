@@ -12,7 +12,6 @@ The way we are going to achieve this is:
 6. Either read or set the last (right-most) bit from that number.
 7. Repeat reading or setting the last blue channel bit in every pixel until we reach the end of the message we are reading or the end of our bits we need to insert into the image.
 
-
 ## Things we need to know
 
 Every character in our message will be written as a two-byte integer. That is a number between 0 and 65535 in decimal or between 0 and 1111 1111 1111 1111 in binary.
@@ -29,16 +28,16 @@ If we were looping through the array of image pixel data from an image on a canv
 let imageData = context.getImageData(0, 0, width, height);
 //width and height are the width and height of the area you want to read
 //typically this is the whole canvas.
-for(let i=0, len=imageData.data.length; i<len; i=i+4){
+for (let i = 0, len = imageData.data.length; i < len; i = i + 4) {
   //we are incrementing by 4 each time to move forward one pixel at a time
   let red = imageData.data[i];
-  let green = imageData.data[i+1];
-  let blue = imageData.data[i+2];
-  let alpha = imageData.data[i+3]
-} 
+  let green = imageData.data[i + 1];
+  let blue = imageData.data[i + 2];
+  let alpha = imageData.data[i + 3];
+}
 ```
 
-If we wanted to start at the 20th pixel in the image then we would change the initial value for i to 4 * 20.
+If we wanted to start at the 20th pixel in the image then we would change the initial value for i to 4 \* 20.
 
 So, the variable blue would contain the integer value representing that colour.
 
@@ -62,7 +61,7 @@ The first row is 130. The second row is 1. AND them together and the result is z
 
 Repeat for the next blue channel integer.
 
-If you were reading the bits from a character, we take the 16-bit number representing the character's number and do an AND operation for each column. 
+If you were reading the bits from a character, we take the 16-bit number representing the character's number and do an AND operation for each column.
 
 Remember that we can shift bits left and right? If I took a 16 bit value and shifted it over 15 places I would be left with a single bit. If I then AND that single bit with the number 1 my result will be either 1 or 0. That is exactly what I want. I shift the number a different number of positions to target each column in turn. AND each result with one to get the one or zero for that last column.
 
@@ -101,15 +100,32 @@ Let's say we have an array of integers representing the blue channel values from
 We will use the bitwise shift right to remove the last bit. Then shift it back to the left. Now we know that the last digit will always be zero. Then do a bitwise OR with the bit value from our array.
 
 ```js
-let blues = [128, 54, 250, 251, 230, 190, 34, 35, 36, 65, 123, 77, 78, 79, 45, 33];
+let blues = [
+  128,
+  54,
+  250,
+  251,
+  230,
+  190,
+  34,
+  35,
+  36,
+  65,
+  123,
+  77,
+  78,
+  79,
+  45,
+  33
+];
 let newblues = [];
-let bitArray = [0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,1]; //number 65
+let bitArray = [0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1]; //number 65
 let currentBit = 0;
-for(let b=0; b<blues.length; b++){
+for (let b = 0; b < blues.length; b++) {
   //loop once for each blue value
   let right = blues[b] >> 1;
   let left = right << 1;
-  newblues.push( left | bitArray[currentBit] );
+  newblues.push(left | bitArray[currentBit]);
   currentBit++;
 }
 ```
@@ -118,3 +134,6 @@ Some of the bits in the numbers that previously ended in ones will now end in ze
 
 See this codepen to see the code samples from here in action - [http://codepen.io/mad-d/pen/e9e41b8d414b94fa1be071888b94c520](http://codepen.io/mad-d/pen/e9e41b8d414b94fa1be071888b94c520)
 
+## Return
+
+[Back to Week 12 Module Home](./README.md)

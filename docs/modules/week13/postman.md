@@ -10,7 +10,6 @@ You can either install Postman as a Chrome extension or as a standalone Native a
 
 [Download Postman](https://www.getpostman.com/).
 
-
 ## Using the Tool
 
 With Postman open we will enter the details of the URL that we want to call.
@@ -40,7 +39,6 @@ In the screenshot above you can see, on the left, a list of the last URLs that I
     title="Postman Mock Servers"
     url="https://www.youtube.com/embed/pAD11I3k9q0"
 />
- 
 
 ## References & Resources
 
@@ -63,3 +61,7 @@ In the screenshot above you can see, on the left, a list of the last URLs that I
 [Mockaroo data generator for multiple formats](https://www.mockaroo.com/)
 
 [fake online API generator](http://jsonplaceholder.typicode.com/)
+
+## Return
+
+[Back to Week 13 Module Home](./README.md)
