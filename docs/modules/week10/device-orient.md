@@ -1,16 +1,17 @@
 # HTML5 Device Orientation API
 
 ## Device Orientation
-Device orientation in a mobile device is connected to the orientation of the device within 3D space. That means around the 3 axes. We are talking about how much the device is rotated around those 3 axes. 
+
+Device orientation in a mobile device is connected to the orientation of the device within 3D space. That means around the 3 axes. We are talking about how much the device is rotated around those 3 axes.
 
 This is different than [Screen Orientation(./screen-orient.md), which is the portrait or landscape orientation of the screen.
 
-Changes in the device orientation are reported through the deviceorientation event. 
+Changes in the device orientation are reported through the deviceorientation event.
 
 Best practice in your script is to test and make sure that this is available.
 
 ```js
-if( window.DeviceOrientationEvent ){
+if (window.DeviceOrientationEvent) {
   //we can add an event listener for deviceorientation to the window object.
 }
 ```
@@ -39,11 +40,11 @@ Some devices will also return some sort of compassHeading property as well.
 
 ## Device Motion
 
-The device motion properties measure changes in the position of the device along the three axes over time. There are four properties -  acceleration, interval, accelerationIncludingGravity, and rotationRate.
+The device motion properties measure changes in the position of the device along the three axes over time. There are four properties - acceleration, interval, accelerationIncludingGravity, and rotationRate.
 
 It can be a lot more complex a task to calculation device motion because the device orientation will impact the information that you are getting.
 
-If your phone is lying flat on a table and is picked straight up then you are talking about motion along its Z-axis. 
+If your phone is lying flat on a table and is picked straight up then you are talking about motion along its Z-axis.
 
 If the phone is in someone's hand, held in front of their face, with the screen vertical, then we are talking about motion along it's y axis.
 
@@ -55,8 +56,12 @@ if( window.DeviceMotionEvent ){
     console.log( motion.acceleration, motion.interval );
   }
 }
-``` 
+```
 
-## References
+## References and Resources
 
 [Google Developer Reference for Device Orientation](https://developers.google.com/web/fundamentals/native-hardware/device-orientation/)
+
+## Return
+
+[Back to Week 10 Module Home](./README.md)

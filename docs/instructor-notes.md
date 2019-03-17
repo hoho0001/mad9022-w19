@@ -40,3 +40,5 @@ More on git and setting up projects. Add a video on the project set up page.
 More videos on Google maps and other topics that have no videos
 
 Add animated interface .gif files for each assignment
+
+Add screenshots to TinyShell README.md file. Then update the wiki pages for TinyShell

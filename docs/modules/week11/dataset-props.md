@@ -11,7 +11,7 @@ The dataset method would be:
 ```js
 let p = document.createElement("p");
 p.dataset.info = 123;
-console.log( p.dataset.info ); //will output the value 123.
+console.log(p.dataset.info); //will output the value 123.
 ```
 
 The get/set attribute alternative is:
@@ -20,7 +20,7 @@ The get/set attribute alternative is:
 let p = document.createElement("p");
 p.setAttribute("data-info", 123);
 console.log( p.getAttribute("data-info");
-``` 
+```
 
 If we were writing the HTML with the data- property already inside it then we would write something like this.
 
@@ -30,10 +30,18 @@ If we were writing the HTML with the data- property already inside it then we wo
 
 This is an extremely useful capability.
 
-It means that we can use attributes that we make up to store any information we want. 
+It means that we can use attributes that we make up to store any information we want.
 
 We can add properties to any element that we read through Javascript which will let us decide how to update or alter the interface of our application.
 
 We can add values that we collect from a user into the interface to be used later.
 
 We can add values that we extract from a JSON file or XML file, again, to be used later.
+
+## References and Resources
+
+[MDN dataset prop reference](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/dataset)
+
+## Return
+
+[Back to Week 11 Module Home](./README.md)

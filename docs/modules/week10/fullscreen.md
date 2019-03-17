@@ -8,21 +8,18 @@ Current security restrictions state that a user action must be the thing that tr
 
 ```js
 let elem = document.documentElement;
-elem.addEventListener("click", function(){
+elem.addEventListener("click", function() {
   if (elem.requestFullscreen) {
-    console.log('requestFullscreen');
+    console.log("requestFullscreen");
     elem.requestFullscreen();
- 
   } else if (elem.msRequestFullscreen) {
-    console.log('msRequestFullscreen');
+    console.log("msRequestFullscreen");
     elem.msRequestFullscreen();
- 
   } else if (elem.mozRequestFullScreen) {
-    console.log('mozRequestFullScreen');
+    console.log("mozRequestFullScreen");
     elem.mozRequestFullScreen();
- 
   } else if (elem.webkitRequestFullScreen) {
-    console.log('webkitRequestFullScreen');
+    console.log("webkitRequestFullScreen");
     elem.webkitRequestFullScreen();
   }
 });
@@ -35,7 +32,10 @@ NOTE: While the official spec uses the name "Fullscreen", the spelling varies be
 <YouTube
     title="Fullscreen API"
     url="https://www.youtube.com/embed/aEpQxlKDbwU"
-/> 
+/>
 
 [Official w3c API documentation](http://www.w3.org/TR/screen-orientation/)
 
+## Return
+
+[Back to Week 10 Module Home](./README.md)
