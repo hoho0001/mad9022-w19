@@ -49,6 +49,29 @@ Here are the Error Codes for the capture.
 
 On the [reference page](https://cordova.apache.org/docs/en/8.x/reference/cordova-plugin-media-capture/index.html) you can find more information about the Media File object, the file Meta Data, and other configuration data.
 
+<YouTube
+    title=""
+    url=""
+/>
+
+## iOS Permissions
+
+Like all iOS 10+ apps that we create with Cordova, we need to make sure that we add the plist permissions. When working with Media Capture, we need to have permissions for the Camera, the Microphone, plus the Camera Roll.
+
+So, add this to the `config.xml` file.
+
+```xml
+<edit-config target="NSCameraUsageDescription" file="*-Info.plist" mode="merge">
+    <string>need camera access to take pictures</string>
+</edit-config>
+<edit-config target="NSMicrophoneUsageDescription" file="*-Info.plist" mode="merge">
+    <string>need microphone access to record sounds</string>
+</edit-config>
+<edit-config target="NSPhotoLibraryUsageDescription" file="*-Info.plist" mode="merge">
+    <string>need to photo library access to get pictures from there</string>
+</edit-config>
+```
+
 ## References and Resources
 
 [HTML5Rocks Media Capture](https://www.html5rocks.com/en/tutorials/getusermedia/intro/)
