@@ -69,13 +69,13 @@ The call to the method will return a true or false depending on whether or not i
 So, as an example, if we wanted to lock the screen so that it could only stay in landscape orientation then we would use this:
 
 ```js
-screen.lock("landscape");
+screen.orientation.lock("landscape");
 ```
 
 If we wanted to lock it down to landscape but only one of the two landscape orientations then we would use this:
 
 ```js
-screen.lock("landscape-primary");
+screen.orientation.lock("landscape-primary");
 ```
 
 This is the version for the new API. The old version used `screen.lockOrientation( )`.
