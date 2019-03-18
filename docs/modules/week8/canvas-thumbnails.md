@@ -70,7 +70,7 @@ function addThumbnails() {
 
 <YouTube
     title="How to place thumbnails on a canvas"
-    url=""
+    url="https://www.youtube.com/embed/JId538COVW4"
 />
 
 ## Return
