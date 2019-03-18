@@ -138,7 +138,16 @@ App name: [your username]
 
 This app will only have one screen. The whole screen will be filled with an interactive Google Map.
 
-After the app has loaded check for the dimensions of the device screen and resize your map and map div to match those dimensions through JavaScript, not CSS. Next, use Geolocation and center the map on the user's current location.
+Use CSS to make the Map fill the whole width and height of the screen. See the example below.
+
+```css
+#map {
+  width: 100vw;
+  height: 100vh;
+}
+```
+
+Next, use Geolocation and center the map on the user's current location.
 
 Double tapping on the map will add a marker to the map. Let the user enter a label for that marker. The coordinates for the tap and the label need to be saved in localStorage. This way, every time the app loads it can add the markers to the map that were saved previously. You can use the built-in JavaScript `prompt()` method to collect the label OR a modal window with a form input.
 
