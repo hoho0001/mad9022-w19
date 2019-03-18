@@ -61,6 +61,5 @@ all from JavaScript
 
 ## Timed Exercise Topics
 
-- mouse events;
 - fetch;
 - DOM manipulation
