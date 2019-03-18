@@ -6,6 +6,14 @@ When you want to put videos on to the Canvas we can simply use the video player 
 
 [Learn more about creating image thumbnails](./canvas-thumbnails.md)
 
+## Media Capturing
+
+HTML5 has a number of methods that can be used for capturing audio and video on a mobile device. Much of the functionality is related to the WebRTC API and the MediaStream API.
+
+Additionally, there is a Media and a Media Capture plugin for Cordova. This gives us lots of options for dealing with Audio and Video on a mobile device.
+
+[Learn more about Media Capturing](./media-capture.md)
+
 ## Image Sizing
 
 It is important to understand the different dimension properties of images in the browser.
@@ -18,14 +26,6 @@ You have been working with Promises for quite a while already. The `fetch` metho
 
 [Learn more about Promises](./promises.md)
 
-## Media Capturing
-
-HTML5 has a number of methods that can be used for capturing audio and video on a mobile device. Much of the functionality is related to the WebRTC API and the MediaStream API.
-
-Additionally, there is a Media and a Media Capture plugin for Cordova. This gives us lots of options for dealing with Audio and Video on a mobile device.
-
-[Learn more about Media Capturing](./media-capture.md)
-
 ## Cordova File Management
 
 There is a plugin with Cordova to allow you access to the file system on the mobile device. This plugin will let you add, move, or delete files and is very useful when working with media files.
@@ -34,7 +34,7 @@ There is a plugin with Cordova to allow you access to the file system on the mob
 
 ## Property Descriptors
 
-JavaScript `Object`s have properties. The properties can be methods, events, or just properties. However, did you know that properties have built-in properties?  You can actually control what can be done with the properties. You can set default values, make properties readable, writable and enumerable.
+JavaScript `Object`s have properties. The properties can be methods, events, or just properties. However, did you know that properties have built-in properties? You can actually control what can be done with the properties. You can set default values, make properties readable, writable and enumerable.
 
 [Learn More about Property Descriptors](./property-descriptors.md)
 
@@ -43,4 +43,3 @@ JavaScript `Object`s have properties. The properties can be methods, events, or 
 Another great new feature in ES6 is the ability to Destructure objects. It uses the `spread` operator and does some cool things to make our code more efficient.
 
 [Learn more about destructuring](./destructuring.md)
-
