@@ -100,6 +100,28 @@ This tutorial covers how to get your API key and create your first Google Map.
   url="https://www.youtube.com/embed/EwZUQuPjakg"
 />
 
+## Map Options
+
+When you are creating a new map, there are a series of options that you can set.
+
+[MapOptions Reference](https://developers.google.com/maps/documentation/javascript/reference/map#MapOptions)
+
+Two of the options are required: `center`, `zoom`. All the rest of them have default values.
+
+Here are a few more options that you could set when creating a new map. `restriction` will create a bounding box that the user cannot pan outside of. The min and max zoom levels will prevent the user from zooming above or below those levels. clickableIcons will control whether or not the user can click on icons that represent Points of Interest on the map. disableDoubleClickZoom will let you add a `dblclick` event listener to your map object.
+
+```js
+map = google.maps.Map(document.getElementById("map"), {
+  zoom: 12,
+  center: { lat: 45.3496711, lng: -75.7569551 },
+  restriction: { north: 45.0, south: 40.0, west: -100, east: -80 },
+  minZoom: 10,
+  maxZoom: 15,
+  disableDoubleClickZoom: true,
+  clickableIcons: false
+});
+```
+
 ## Reference Links
 
 [to get a Google API key](https://developers.google.com/maps/documentation/javascript/get-api-key)

@@ -30,7 +30,42 @@ By default the controls are mostly hidden. You can add any combination of them b
 
 There are also other properties that let you manage the style and positioning of the different controls. See the documentation link below for more information.
 
-[Controls Reference](https://developers.google.com/maps/documentation/javascript/controls)
+## Maps Controls Options
+
+There are also options that you can set for each Control type. The options allow you to change the location of the control on the map. Some controls have additional properties, like a default location or a default style.
+
+```js
+let map = new google.maps.Map(document.getElementById("map"), {
+  zoom: 14,
+  center: { lat: -33, lng: 151 },
+  zoomControl: true,
+  zoomControlOptions: {
+    position: google.maps.ControlPosition.LEFT_CENTER
+  },
+  mapTypeControl: false,
+  mapTypeControlOptions: {
+    style: google.maps.MapTypeControlStyle.DROPDOWN_MENU,
+    mapTypeIds: ["roadmap", "terrain"],
+    position: google.maps.ControlPosition.LEFT_TOP
+  },
+  scaleControl: false,
+  streetViewControl: true,
+  streetViewControlOptions: {
+    position: google.maps.ControlPosition.RIGHT_CENTER
+  },
+  rotateControl: false,
+  fullscreenControl: true,
+  fullscreenControlOptions: {
+    position: google.maps.ControlPosition.RIGHT_TOP
+  }
+});
+```
+
+## References and Resources
+
+[Controls Guide](https://developers.google.com/maps/documentation/javascript/controls)
+
+[Controls Reference](https://developers.google.com/maps/documentation/javascript/reference/control)
 
 ## Return
 
