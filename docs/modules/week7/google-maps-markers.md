@@ -70,7 +70,18 @@ let position = {
   lng: -75.5432
 };
 infoWindow.setPosition(position);
-infoWindow.setContent("Location found.");
+let contentDiv = document.createElement("div");
+let p = document.createElement("p");
+p.textContent = "Location Found";
+contentDiv.appendChild(p);
+let btn = document.createElement("button");
+btn.textContent = "Click Me";
+btn.addEventListener("click", ev => {
+  console.log("button inside info window was clicked");
+});
+contentDiv.appendChild(btn);
+infoWindow.setContent(contentDiv);
+
 map.setCenter(position);
 ```
 
