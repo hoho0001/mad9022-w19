@@ -108,7 +108,7 @@ When you are creating a new map, there are a series of options that you can set.
 
 Two of the options are required: `center`, `zoom`. All the rest of them have default values.
 
-Here are a few more options that you could set when creating a new map. `restriction` will create a bounding box that the user cannot pan outside of. The min and max zoom levels will prevent the user from zooming above or below those levels. clickableIcons will control whether or not the user can click on icons that represent Points of Interest on the map. disableDoubleClickZoom will let you add a `dblclick` event listener to your map object.
+Here are a few more options that you could set when creating a new map. `restriction` will create a bounding box that the user cannot pan outside of. The min and max zoom levels will prevent the user from zooming above or below those levels. `clickableIcons` will control whether or not the user can click on icons that represent **Points of Interest** on the map. `disableDoubleClickZoom` will let you add a `dblclick` event listener to your map object.
 
 ```js
 map = google.maps.Map(document.getElementById("map"), {
