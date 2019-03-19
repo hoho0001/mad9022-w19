@@ -40,6 +40,12 @@ When you want to add `Markers` or `InfoWindows` to the map, the Google Maps API 
 
 [Learn about Map Markers](./google-maps-markers.md)
 
+### Google Maps Geometry, Shapes and Lines
+
+There are namespaces and classes in the Google Maps Library that will help you draw lines and shapes, as well as, determine distances and calcuate if coordinates are within a shape or along a line.
+
+[Learn More about Shapes and Geometry](./google-maps-geometry.md)
+
 ## Cordova Geolocation
 
 In order to work with Geolocation in a Cordova app, we need to add the Geolocation plugin to make sure that we have the necessary permissions on the mobile device.
