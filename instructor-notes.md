@@ -43,8 +43,8 @@ Next year change order for Cordova projects
 2. Photo
 3. Local Notifications
 4. Geolocation
-5. Canvas + capture video + thumbnails
-6. ?
+5. Canvas + capture video + thumbnails - Replace this with simpler one
+6. Tundra
 
 ## Vuepress site
 
