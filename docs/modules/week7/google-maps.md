@@ -114,7 +114,12 @@ Here are a few more options that you could set when creating a new map. `restric
 map = google.maps.Map(document.getElementById("map"), {
   zoom: 12,
   center: { lat: 45.3496711, lng: -75.7569551 },
-  restriction: { north: 45.0, south: 40.0, west: -100, east: -80 },
+  restriction: latLngBounds: {
+        north: 45.36,
+        south: 40.35,
+        west: -100.28,
+        east: -80.81,
+      },
   minZoom: 10,
   maxZoom: 15,
   disableDoubleClickZoom: true,

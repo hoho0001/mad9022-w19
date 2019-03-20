@@ -1,4 +1,3 @@
-
 ## Sample VideoPlayer
 
 - Sample text above the video
@@ -18,3 +17,5 @@
   title="The name of the tutorial or playlist"
   url="https://www.youtube.com/"
 />
+
+<Badge type="warn" />

@@ -165,7 +165,7 @@ This will point to the latest version of Xcode for the build tools.
 8. Test by trying to launch the iOS Simulator from the command line using the `ios-sim` command, as explained above.
 9. Next try creating a Cordova project, adding the ios platform, and run the `cordova build ios` command with the `--buildFlag` as detailed above.
 10. Finally, try to `cordova emulate ios` with the `target` and the `buildFlag` as detailed above.
-11. If this still fails you might need to use [homebrew]() to install ios-deploy.
+11. <Badge type="warn" text="warning" /> Do NOT use `HomeBrew` to install ios-deploy. This will lead to conflicts between the version of python that HomeBrew uses and XCode uses.
 12. If you get an error about `~/.config/configstore/` needing permissions then navigate to the `~/.config/` folder in the Terminal. Run the command `ls -la` to see the permissions and owner of the folders. There should be a folder that is owned by your user account. For example, on my MBP the owner of the folder is `steve`. We want to make sure that your user account is the owner of the `configstore` folder. We will use the `chown` command to fix this.
 
 ```
