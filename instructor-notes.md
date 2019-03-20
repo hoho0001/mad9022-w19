@@ -20,6 +20,16 @@ Talk about Play | Pause being one button.
 Have a stop button.
 Have prev | next track buttons
 
+## Local Notifications
+
+Talk about the different kinds of date and time inputs
+Don't set the time for 7 days earlier
+Set both time and date
+
+## Findr
+
+Add requirement for removing markers from button inside infoWindows
+
 ## Project Sequence
 
 Next year change order for Cordova projects
