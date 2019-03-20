@@ -102,6 +102,13 @@ If there are still permission issues then reference this link to see the extra o
 
 Opening a Cordova app in XCode will be the easiest way to test your app in the Simulator. XCode has a run button and a drop down list. You can select which version of the Simulator that you want to use and click the run button to launch the app on the Simulator.
 
+You will also probably have to set the permissions on the folder where `ios-deploy` is installed so that any application can make changes to the contents of the `ios-deploy` folder.
+
+```
+cd /usr/local/lib/node_modules/lib/node_modules
+sudo chmod -R 0777 ios-deploy
+```
+
 ## Debugging with Safari
 
 In the same way that Chrome has the remote devices tool that lets us look at our Cordova apps and the console in the browser, Safari will let us look at the Cordova apps and console for apps running on iOS devices or the Simulator.
