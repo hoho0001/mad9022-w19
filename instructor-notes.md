@@ -21,6 +21,7 @@ Add a seekbar as a requirement.
 Talk about Play | Pause being one button.
 Have a stop button.
 Have prev | next track buttons
+Make sure next song autoplays
 
 ## Local Notifications
 
@@ -31,6 +32,8 @@ Set both time and date
 ## Findr
 
 Add requirement for removing markers from button inside infoWindows
+Mention disabling the double click functionality in the map options
+?add bounding box for map?
 
 ## Project Sequence
 
