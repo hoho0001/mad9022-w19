@@ -143,9 +143,16 @@ In the newer versions of XCode there is a problem with the build process if you 
 Remember though, that you have to rebuild the project in the terminal to copy the latest files from the `www` folder into your iOS project.
 
 To build your project fully and launch it from the command line we need to add another flag to the command.
+Here is the command for the simulator launch.
 
 ```
 cordova emulate ios --target="iPhone-8, 12.0" --buildFlag="-UseModernBuildSystem=0"
+```
+
+here is the command for launching the project on to a device
+
+```
+cordova run ios --device --buildFlag="-UseModernBuildSystem=0"
 ```
 
 When we run the `emulate` command we should specific which Simulator we want to use to test our app. This is accomplished with the `--target` flag. You can change the target to any of the available devices from the `ios-sim showdevicetypes` command above.
