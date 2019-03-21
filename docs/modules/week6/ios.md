@@ -183,7 +183,7 @@ This will point to the latest version of Xcode for the build tools.
     If you installed HomeBrew, it is a good idea to remove it:
 
 ```
-
+ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/uninstall)"
 ```
 
 After removing HomeBrew we want to do a fresh install of ios-deploy with npm.
