@@ -180,6 +180,27 @@ This will point to the latest version of Xcode for the build tools.
 9. Next try creating a Cordova project, adding the ios platform, and run the `cordova build ios` command with the `--buildFlag` as detailed above.
 10. Finally, try to `cordova emulate ios` with the `target` and the `buildFlag` as detailed above.
 11. <Badge type="warn" text="warning" /> Do NOT use `HomeBrew` to install ios-deploy. This will lead to conflicts between the version of python that HomeBrew uses and XCode uses.
+    If you installed HomeBrew, it is a good idea to remove it:
+
+```
+
+```
+
+After removing HomeBrew we want to do a fresh install of ios-deploy with npm.
+
+```
+sudo npm uninstall -g ios-deploy
+sudo npm i -g ios-deploy --allow-root --unsafe-perm=true
+```
+
+Then we need to update the permissions for the ios-deploy folder to allow XCode to write to that folder.
+
+```
+cd /usr/local/lib/node_modules
+ls -la
+sudo chmod -R 0777 ios-deploy
+```
+
 12. If you get an error about `~/.config/configstore/` needing permissions then navigate to the `~/.config/` folder in the Terminal. Run the command `ls -la` to see the permissions and owner of the folders. There should be a folder that is owned by your user account. For example, on my MBP the owner of the folder is `steve`. We want to make sure that your user account is the owner of the `configstore` folder. We will use the `chown` command to fix this.
 
 ```
