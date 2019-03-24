@@ -9,6 +9,11 @@ Working with Geolocation in Cordova is almost exactly the same as working with i
     url="https://www.youtube.com/embed/NIAqR34eg7I"
 />
 
+<YouTube
+    title="Geolocation Permissions for Cordova"
+    url="https://www.youtube.com/embed/DONHl4P2a4M"
+/>
+
 When adding the Geolocation plugin to your project, if you are using it on iOS then you also need to add the following to your `config.xml` file, inside the `<platform name="ios"></platform>` element.
 
 ```xml

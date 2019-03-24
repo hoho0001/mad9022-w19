@@ -44,6 +44,11 @@ It will also add a listener to the marker which sets the level of zoom on the ma
 
 We can use the same approach to add listeners for any of the events.
 
+<YouTube
+  title="Google Maps Markers and Events"
+  url="https://www.youtube.com/embed/kUVKzZ1NKX0"
+/>
+
 ## Reference
 
 [Google Map Event reference](https://developers.google.com/maps/documentation/javascript/events)

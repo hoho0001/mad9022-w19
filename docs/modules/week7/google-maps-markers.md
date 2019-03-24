@@ -33,6 +33,11 @@ You will be creating a new Marker Object on your map. If you want to be able to 
 
 [Marker reference](https://developers.google.com/maps/documentation/javascript/markers).
 
+<YouTube
+  title="Google Maps Markers and Events"
+  url="https://www.youtube.com/embed/kUVKzZ1NKX0"
+/>
+
 ## Animating Markers
 
 When adding markers to the map you can animate their appearance so that they drop down from the top of the map or they bounce up and down on a specific point.
