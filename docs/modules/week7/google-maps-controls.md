@@ -61,6 +61,8 @@ let map = new google.maps.Map(document.getElementById("map"), {
 });
 ```
 
+It is worth noting that several of the Map Controls have recently stopped appearing on iOS. This happened with an update to iOS and the Google Maps API. [StackOverflow Note about this](https://stackoverflow.com/questions/52040760/zoom-controls-on-ios-are-no-longer-visible) [Other Forum Post about this iOS problem](https://forum.mendixcloud.com/link/questions/90173). The controls still appear and work on Android.
+
 ## References and Resources
 
 [Controls Guide](https://developers.google.com/maps/documentation/javascript/controls)

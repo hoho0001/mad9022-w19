@@ -57,3 +57,5 @@ More videos on Google maps and other topics that have no videos
 Add animated interface .gif files for each assignment
 
 Add screenshots to TinyShell README.md file. Then update the wiki pages for TinyShell
+
+Turn each Project into its own page. On the main projects page add direct links to each project.

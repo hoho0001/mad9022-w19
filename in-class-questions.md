@@ -114,6 +114,9 @@
 9. Name three possible properties we can use in a media query? [min-width, min-height, max-width, max-height, min-aspect-ratio, max-aspect-ratio, orientation]
 10. What is the CSS property that controls the calculation of an element's width and whether or not to include the padding or border in that calculation? [box-sizing]
 11. What @ rule do you use to load another CSS file from inside your existing CSS file? Like Google Fonts. [@import]
+12. Sample of a property value for transition.
+13. Difference between transition and animation? [animation has steps and can loop]
+14. What is the keyword that we use to define the steps in an animation? [@keyframes]
 
 ## Week 10 - Promises
 
