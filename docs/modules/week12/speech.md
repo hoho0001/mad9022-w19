@@ -4,7 +4,11 @@ There are two parts to the HTML5 Speech API. First is the speech-to-text, which 
 
 ## References and Resources
 
-[MDN Reference](https://developer.mozilla.org/en-US/docs/Web/API/Web_Speech_API)
+[MDN Web Speech Reference](https://developer.mozilla.org/en-US/docs/Web/API/Web_Speech_API)
+
+[MDN Web Speech Guide](https://developer.mozilla.org/en-US/docs/Web/API/Web_Speech_API/Using_the_Web_Speech_API)
+
+[Browser Support for Speech to Text](https://caniuse.com/#feat=speech-synthesis)
 
 ## Return
 
