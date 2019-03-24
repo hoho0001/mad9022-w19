@@ -1,5 +1,11 @@
 # 11. Iterators, Generators, Async, Await...
 
+## iPhone-X Design Problems
+
+The latest set of iPhones introduced a new notch at the top of the device. This introduced new challenges to CSS and designs. iOS 11 provided a few new constants and a new value for the viewport meta tag.
+
+[Learn more about the iPhone Design Fixes](./iphone-x.md)
+
 ## Dataset Properties
 
 HTML is a fixed set of allowed elements and attributes. To have valid HTML you are not allowed to create your own attributes. To get around this problem, there is a loop-hole in the HTML5 spec. If an attribute name begins with `data-` then it will be considered valid. These attributes are called the `dataset properties`.
@@ -14,16 +20,15 @@ In ES6 they added two keywords - `async` and `await` which let you turn any func
 
 ## ES6 Iterators and Generators
 
-When you have an Object which is iterable, that means that the Object has a property called an `Iterator`. You can talk to the `Iterator` and ask it for the next item inside the Object. As long as there are more items inside the Object it will continue to pass you another item. 
+When you have an Object which is iterable, that means that the Object has a property called an `Iterator`. You can talk to the `Iterator` and ask it for the next item inside the Object. As long as there are more items inside the Object it will continue to pass you another item.
 
 `Generator`s are a simple syntax that lets you create and access an `Iterator`.
 
 [Learn more about Iterators and Generators](./iterator-generator.md)
 
-
 ## Web Payment Request API
 
-One of the new HTML5 APIs is the `Web Payment Request` API. With this API we have a standard way for users to fill in their credit card (payment) information. We don't need to have a form that we build with HTML and CSS. This will provide a standard method and do basic validation of the information. The credit information gets saved encrypted in the browser.  This will not send the information to Mastercard or Visa etc. It does not charge the card. The purpose of this is to standardize collection of payment information.
+One of the new HTML5 APIs is the `Web Payment Request` API. With this API we have a standard way for users to fill in their credit card (payment) information. We don't need to have a form that we build with HTML and CSS. This will provide a standard method and do basic validation of the information. The credit information gets saved encrypted in the browser. This will not send the information to Mastercard or Visa etc. It does not charge the card. The purpose of this is to standardize collection of payment information.
 
 [Learn more about the Payment Request API](./payment-request.md)
 
