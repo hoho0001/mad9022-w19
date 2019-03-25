@@ -34,8 +34,12 @@ Here is an example of the environmental constants in use.
 
 Here are a couple links that talk about the solution and related properties.
 
-[](https://stephenradford.me/removing-the-white-bars-in-safari-on-iphone-x/)
+[Stephen Radford article](https://stephenradford.me/removing-the-white-bars-in-safari-on-iphone-x/)
 
-[](https://blog.phonegap.com/displaying-a-phonegap-app-correctly-on-the-iphone-x-c4a85664c493)
+[PhoneGap Blob article](https://blog.phonegap.com/displaying-a-phonegap-app-correctly-on-the-iphone-x-c4a85664c493)
 
-[](https://documentation.alphasoftware.com/pages/Guides/PhoneGap/Hot%20Topics/iPhone%20X%20Styling%20And%20The%20Status%20Bar%20Plugin.xml)
+[Alpha Software article](https://documentation.alphasoftware.com/pages/Guides/PhoneGap/Hot%20Topics/iPhone%20X%20Styling%20And%20The%20Status%20Bar%20Plugin.xml)
+
+[MDN env() reference](https://developer.mozilla.org/en-US/docs/Web/CSS/env)
+
+[CanIUse env() reference](https://caniuse.com/#feat=css-env-function)
