@@ -18,7 +18,9 @@
 ## References and Resources
 
 [MDN Iterator Reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol/iterator)
+
 [MDN Generator Reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Generator)
+
 [MDN yield\* Reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/yield*)
 
 ## Return
