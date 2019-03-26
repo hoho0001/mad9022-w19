@@ -175,7 +175,7 @@ Once you have the canvas with 4 images you need to extract the image from the Ca
 
 Make sure that the canvas dimensions match the actual dimensions of the video. That way your poster image will match the size of the video player properly.
 
-Disable the native controls on the video player elements. Do NOT have them automatically start playing. Create your own `Play | Pause` button and a `Delete` button for each video.
+Show the native controls on the video player element. Do NOT have them automatically start playing.
 
 ## Project 6 - Tundra: The Canadian Dating App
 
