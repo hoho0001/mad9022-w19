@@ -171,7 +171,7 @@ Your interface will need a single video element where the saved video will be lo
 
 The image with the 4 thumbnails is to be used as the poster image for the saved video. One screen lets the user record videos and generate the thumbnails. The poster image will be created on an HTML Canvas element. The Canvas does not need to be shown on the screen. Simply move the video to 4 different spots in the video and then use the video as the source for the Canvas `drawImage` method. You will call the `drawImage` method 4 times. Each time you will grab the current video frame, resize the image and display it on a different quadrant on the canvas.
 
-Once you have the canvas with 4 images you need to extract the image from the Canvas and save the image as a file that can be used as the poster image for the video element. Set the poster property of the HTML video element to be the newly created image.
+Once you have the canvas with 4 images you need to extract the image from the Canvas and save the image as a file that can be used as the poster image for the video element. Set the poster property of the HTML video element to be the newly created image. The image from the canvas element will need the cordova file plugin to save the image. This plugin gets installed as a dependency for the media-capture plugin.
 
 Make sure that the canvas dimensions match the actual dimensions of the video. That way your poster image will match the size of the video player properly.
 
