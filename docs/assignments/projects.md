@@ -165,15 +165,17 @@ App name: [your username]
 
 [Project Setup Instructions](./project-setup.md)
 
-You will be creating a Cordova App with two screens whic lets a user record a video using the device camera (front or back). After recording and saving the video to the application's `data` directory (not `cache`) you will then use the HTML5 canvas element(s), HTML video element, and IMG element(s) to gather a series of screen grabs from the video. Combine all the screengrabs into a single image that shows 4 thumbnails from the video.
+You will be creating a Cordova App with one screen which lets a user record a video using the device camera (front or back). After recording and saving the video you will then use the HTML5 canvas element(s), HTML video element, and IMG element(s) to gather a series of screen grabs from the video. Combine all the screengrabs into a single image that shows 4 thumbnails from the video. The media-capture plugin will do the recording and saving of the video. It will return the location of the saved video.
 
-The image with the 4 thumbnails is to be used as the poster image for the saved video. One screen lets the user record videos and generate the thumbnails. The second screen will show the saved videos as a vertical column of video players. Each video player will show the generated poster image.
+Your interface will need a single video element where the saved video will be loaded.
 
-Disable the native controls on the video player elements. Do NOT have them automatically start playing. Create your own `Play | Pause` button and a `Delete` button for each video. Set the volume for each video to a low level. Clicking the delete button should:
+The image with the 4 thumbnails is to be used as the poster image for the saved video. One screen lets the user record videos and generate the thumbnails. The poster image will be created on an HTML Canvas element. The Canvas does not need to be shown on the screen. Simply move the video to 4 different spots in the video and then use the video as the source for the Canvas `drawImage` method. You will call the `drawImage` method 4 times. Each time you will grab the current video frame, resize the image and display it on a different quadrant on the canvas.
 
-1. remove the video player from the page;
-2. delete the poster image from the device storage;
-3. delete the video file from the device storage.
+Once you have the canvas with 4 images you need to extract the image from the Canvas and save the image as a file that can be used as the poster image for the video element. Set the poster property of the HTML video element to be the newly created image.
+
+Make sure that the canvas dimensions match the actual dimensions of the video. That way your poster image will match the size of the video player properly.
+
+Disable the native controls on the video player elements. Do NOT have them automatically start playing. Create your own `Play | Pause` button and a `Delete` button for each video.
 
 ## Project 6 - Tundra: The Canadian Dating App
 
