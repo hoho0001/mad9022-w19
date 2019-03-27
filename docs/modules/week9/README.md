@@ -8,6 +8,14 @@ A Gesture is something like - tap, swipe, pan, pinch, zoom, rotate, 2-finger swi
 
 [Learn more about Gestures](./gestures.md)
 
+## Android Permissions for Cordova
+
+Sometimes permission requirements change for mobile operating systems and this can effect your plugins.
+
+There is an Android Permissions plugin that you can use to check for and enable different permissions for your app.
+
+[Learn more about Android Cordova Permissions](./android-permissions.md)
+
 ## WebSQL | SQLite
 
 Want to use an actual database and SQL syntax in your mobile app to save data? Cordova has a number of database capabilities built in. There are also other plugins that you can find and use. `SQL` stands for Structured Query Language. It is the language that you use to talk with relational databases. Don't worry though it is a very simple language. It is very English-like in it's syntax.
