@@ -48,3 +48,17 @@ When comes to solving permission problems for iOS, the solution is usually addin
   title="Android Permissions on Cordova"
   url="https://www.youtube.com/embed/W47ZJ1vgqqI"
 />
+
+## References and Resources
+
+[Android permission plugin](https://www.npmjs.com/package/cordova-plugin-android-permissions)
+
+[Android Native reference for permissions](https://developer.android.com/reference/android/Manifest.permission.html)
+
+[Android Permission Categories](https://developer.android.com/guide/topics/permissions/overview#normal-dangerous)
+
+[Article about Understanding Android Permissions](https://blog.avast.com/managing-android-app-permissions)
+
+## Return
+
+[Back to Week 9 Module Home](./README.md)
