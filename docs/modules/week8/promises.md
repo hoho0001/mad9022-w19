@@ -91,7 +91,7 @@ The above code shows an example of the fetch method being used to make an AJAX c
 
 <YouTube
     title="Promise all method"
-    url="https://www.youtube.com/embed/1cFl7WQDYYo"
+    url="https://www.youtube.com/embed/0jcEluMNy5A"
 />
 
 ### Promise race() Method

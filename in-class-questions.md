@@ -142,7 +142,7 @@
 ## Week 12 - ES6 Features
 
 1. async - await
-2. let const
+2. let const var
 3. template literals
 4. yeild
 5. default params
