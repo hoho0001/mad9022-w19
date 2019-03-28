@@ -226,6 +226,11 @@ Put your own username in the command without the square brackets.
 }
 ```
 
+<YouTube
+    title="Cordova Build Settings for iOS and XCode 10"
+    url="https://www.youtube.com/embed/rnI1vKMz0lM"
+/>
+
 ## References
 
 Here is the official Cordova Reference [for working with iOS](https://cordova.apache.org/docs/en/latest/guide/platforms/ios/index.html)
