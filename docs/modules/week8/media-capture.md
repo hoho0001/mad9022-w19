@@ -72,6 +72,8 @@ So, add this to the `config.xml` file.
 </edit-config>
 ```
 
+To learn about how to fix any read permission problems with the media-capture plugin running on Android [See Also](../week9/android-permissions.md)
+
 ## References and Resources
 
 [HTML5Rocks Media Capture](https://www.html5rocks.com/en/tutorials/getusermedia/intro/)
