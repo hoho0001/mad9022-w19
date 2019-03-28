@@ -43,3 +43,8 @@ When comes to solving permission problems for iOS, the solution is usually addin
     <string>need location access to find things nearby</string>
 </edit-config>
 ```
+
+<YouTube
+  title="Android Permissions on Cordova"
+  url="https://www.youtube.com/embed/W47ZJ1vgqqI"
+/>
