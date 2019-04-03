@@ -34,6 +34,8 @@ All your CSS should be in ONE file that is shared by all pages.
 
 All your JavaScript should be in ONE file that is shared by all pages.
 
+Every page should have a common branded header.
+
 ## Project Files
 
 Create your project as a private GitHub repo.
@@ -64,7 +66,7 @@ When the user clicks the close button the div should disappear immediately.
 
 If the user does not dismiss the div then after 5 seconds have it slide back off the screen.
 
-Your JavaScript should have a single function that is called to display any message.
+Your JavaScript should have a single function that is called to display any message. The div should display BOTH the `title` and the `detail` from the Response payload for an error message.
 
 ## Sign In Page
 
@@ -81,6 +83,8 @@ Following a successful login (through the call to your API) you need to get the 
     "token": "your valid user token from the api"
 }}
 ```
+
+After logging in, the user should be redirected to the Pizza List page. They will be able to see links for Pizza List, Ingredient List, Logout, and Change Password. You can choose the labels for these links but they should make sense.
 
 ## Sign Up (Registration) Page
 
@@ -100,10 +104,42 @@ The form should also have a checkbox, which when clicked, will toggle the `type`
 
 ## Admin Pizza List
 
-The home page AFTER the user logs in
+The home page AFTER the user logs in is the Pizza List page. This page lets you view all the currently created pizzas in your database. This page requires a valid JWT token in localStorage or the user will be redirected back to the `Sign In` screen.
+
+This page will make a request to the API for a list of all the pizzas in your database. The JWT token needs to be passed through the Authentication Bearer token header.
+
+In each row on this page there should all the details provided from the API call `GET /api/pizzas` and also be two buttons - `Edit` and `Delete`.
+
+Clicking the `Delete` button will require a confirmation dialog. After the user confirms the delete then make the appropriate API call to delete the pizza from the database.
+
+Clicking the `Edit` button will take the user to the `Add/Edit` page. The id of the pizza to edit needs to be passed to the page through the queryString if you are using multiple pages.
+
+This page will also need a button/link at the top and/or bottom of the screen to Add a new pizza. Clicking this button/link will take the user to the Add/Edit screen.
 
 ## Admin Pizza Add/Edit
 
+If no pizza id is provided on this page then the form should be empty. The page should consider itself to be in `ADD` mode. If a pizza id is provided through the querystring then the page should be in `EDIT` mode. This `ADD / EDIT` mode will determine which API call you make for the pizza.
+
+In `EDIT` mode, this page will make a request to the API for the details of the pizza with the matching id. The JWT token needs to be passed through the Authentication Bearer token header.
+
+The user will have two buttons on this page - `SAVE PIZZA` and `BACK TO PIZZA LIST`. The back button just takes the user back to the Admin pizza list page. The Save button will make an API call to add or edit the pizza details.
+
 ## Admin Ingredient List
 
+The Ingredient List page will work the same way as the pizza list page. Every ingredient should display the details about the ingredient that are available from your database and the API call `GET /api/ingredients`. Every ingredient should be displayed on a single row with two buttons - `Edit` and `Delete`.
+
+This page will make a request to the API for a list of all the ingredients in your database. The JWT token needs to be passed through the Authentication Bearer token header.
+
+Without a valid request and response nothing will be visible on this page.
+
+Clicking the `Edit` button will take the user to the Ingredient add edit page. The ingredient id should be passed through the querystring if the website is built on multiple pages.
+
+This page will also need a button/link at the top and/or bottom of the screen to Add a new ingredient. Clicking this button/link will take the user to the Add/Edit screen.
+
 ## Admin Ingredient Add/Edit
+
+The id of the ingredient to edit will be passed to this page through the querystring if the site is multiple pages and if the page is in `EDIT` mode. It will make a request to the API for the details of the ingredient. The JWT token needs to be passed through the Authentication Bearer token header.
+
+If no id is provided then the page will be in `ADD` mode. The page needs to know if it is in add or edit mode if the user clicks on the `SAVE INGREDIENT` button. The page will have two buttons - `SAVE INGREDIENT` and `BACK TO INGREDIENT LIST`.
+
+When the user clicks the SAVE button then you need to make a call to the appropriate API endpoint depending on whether the user is adding or editing an ingredient. The JWT token will need to be sent through the Authentication Bearer token header with this request.
