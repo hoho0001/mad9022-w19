@@ -64,6 +64,7 @@ If you are creating this site as a SPA then you can use the `pushState` method t
 
 Whether your site is built with separate pages or as a SPA the paths should look the same.
 
+```
 /index.html - the sign in page
 /register.html - the sign up page
 /profile.html - the change password page
@@ -71,8 +72,9 @@ Whether your site is built with separate pages or as a SPA the paths should look
 /admin/pizza-edit.html - the add / edit pizza page
 /admin/ingredients.html - the list / delete ingredient page
 /admin/ingredient-edit.html - the add / edit ingredient page
+```
 
-Note: the admin pages are inside an admin folder (or appear as if they are).
+**Note:** the admin pages are inside an admin folder (or appear as if they are).
 
 ## User Notification
 
