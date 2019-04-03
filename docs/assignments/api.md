@@ -94,7 +94,7 @@ Your JavaScript should have a single function that is called to display any mess
 
 ## Sign In Page
 
-This is where the user would provide their email address and password to try logging in. This page should not check for a valid authentication token. The email and password will be sent to the server as the REQUEST payload to `/auth/tokens/`. (See the Auth Routes notes in the MAD9124 Project description for more details)
+This is where the user would provide their email address and password to try logging in. This page should not check for a valid authentication token. The email and password will be sent to the server as the REQUEST payload to `/auth/tokens/`. [See the Auth Routes notes in the MAD9124 Project description for more details](https://mad9124-w19.github.io/deliverables/final.html)
 
 There needs to be a logout (sign out) link in the top navigation area on every page where the user is logged in.
 
@@ -112,7 +112,7 @@ After logging in, the user should be redirected to the Pizza List page. They wil
 
 ## Sign Up (Registration) Page
 
-The registration page will have a form with five fields - `firstName`, `lastName`, `email`, , `password`, and `userType`. These will be sent to the API as the REQUEST payload. (See the Auth Routes notes in the MAD9124 Project description for more details).
+The registration page will have a form with five fields - `firstName`, `lastName`, `email`, , `password`, and `userType`. These will be sent to the API as the REQUEST payload. [See the Auth Routes notes in the MAD9124 Project description for more details](https://mad9124-w19.github.io/deliverables/final.html).
 
 This page does NOT require a valid JWT token.
 
