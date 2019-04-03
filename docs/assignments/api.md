@@ -1,4 +1,12 @@
-## API Assignment
+# Final Project
+
+## Pizza Shop
+
+::: tip Due
+Due before 11:59pm on Friday April 26, 2019
+
+Counts for 20% of your final Grade in MAD9022
+:::
 
 This will be a joint assignment with a partner. You and a partner of your choosing will be building a whole full-stack solution. The API portion will be built for MAD9124. The front-end interface will be built for MAD9022.
 
@@ -50,6 +58,22 @@ Add a .gitignore file which filters out `node_modules/` and `.DS_Store`.
 
 Make sure there is a README.md file at the root with a link to the `github.io` version of the site.
 
+## Webpage Paths
+
+If you are creating this site as a SPA then you can use the `pushState` method to change the URL displayed to the user.
+
+Whether your site is built with separate pages or as a SPA the paths should look the same.
+
+/index.html - the sign in page
+/register.html - the sign up page
+/profile.html - the change password page
+/admin/pizzas.html - the list / delete pizza page
+/admin/pizza-edit.html - the add / edit pizza page
+/admin/ingredients.html - the list / delete ingredient page
+/admin/ingredient-edit.html - the add / edit ingredient page
+
+Note: the admin pages are inside an admin folder (or appear as if they are).
+
 ## User Notification
 
 There needs to be a consistent way of displaying messages to the user. Create a common function which will create a `div` that slides on to the page from the top of the screen to display any message to the user. When something fails or something is successfully completed we need to tell the user.
@@ -98,6 +122,8 @@ Add a drop down list to the form to allow users to decide if they want to regist
 
 This page should only be accessible with a valid JWT token after the user has logged in.
 
+The page should display the user's current first name, last name, and email address as read only text.
+
 It needs to have two input fields - `newPassword` and `retypeNewPassword`. You will do client side validation to make sure that both fields have the EXACT same value. The fields should be displayed as `<input type="password">`.
 
 The form should also have a checkbox, which when clicked, will toggle the `type` of both fields between `password` and `text`. The checkbox label should read `Show Password`.
@@ -143,3 +169,11 @@ The id of the ingredient to edit will be passed to this page through the queryst
 If no id is provided then the page will be in `ADD` mode. The page needs to know if it is in add or edit mode if the user clicks on the `SAVE INGREDIENT` button. The page will have two buttons - `SAVE INGREDIENT` and `BACK TO INGREDIENT LIST`.
 
 When the user clicks the SAVE button then you need to make a call to the appropriate API endpoint depending on whether the user is adding or editing an ingredient. The JWT token will need to be sent through the Authentication Bearer token header with this request.
+
+::: tip Remember
+It is a good habit to make a git commit as you complete each logical requirement. This not only tracks your progress, but protects your working code in case you later break it and need to roll back.
+:::
+
+::: warning Bonus
+If you want to earn up to 5 bonus percent on the project then you can also create the Ordering pages for the customers on your website.
+:::
