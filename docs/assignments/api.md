@@ -6,7 +6,7 @@
 Counts for 20% of your final Grade in MAD9022
 :::
 
-This will be a joint assignment with a partner. You and a partner of your choosing will be building a whole full-stack solution. The API portion will be built for MAD9124. The front-end interface will be built for MAD9022.
+This will be a joint assignment with a partner. You and a partner of your choosing will be building a whole full-stack solution. The API portion will be built for MAD9124. The front-end interface will be built for MAD9022. [MAD9124 Project Details](https://mad9124-w19.github.io/deliverables/final.html).
 
 ::: danger ACTION REQUIRED
 Please send an email to both Steve **griffis@algonquincollege.com** and Robert **mckennr@algonquincollege.com** to tell us who your partner for the final project will be.
