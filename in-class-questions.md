@@ -141,16 +141,47 @@
 
 ## Week 12 - ES6 Features
 
-1. async - await
-2. let const var
-3. template literals
-4. yeild
-5. default params
-6. destructuring
-7. for of loop
-8. Set
-9. Map
-10. spread operator
+1. Use async, await to make this code console something that is not `undefined`.
+
+```js
+function f(url) {
+  let data = fetch(url).then(response => response.json);
+  console.log(data);
+}
+```
+
+2. What is the difference between `let` and `var`.
+3. Which line in this code will fail and why?
+
+```js
+const obj = { a: 1, b: 2 };
+obj.a = obj.b;
+obj = { a: 1, b: 2 };
+```
+
+4. What is the template literal version of this?
+
+```js
+let num = 42;
+console.log("My favourite number is " + 42 + ".");
+```
+
+5. How would you provide a default object with a name property for this function?
+
+```js
+function f(person) {
+  console.log(person.name);
+}
+```
+
+6. Can you use a for of loop with this object?
+
+```js
+let person = { id: 123, name: "Bob", email: "bob@work.org" };
+```
+
+7. What is the difference between a `Set` and a `Map`?
+8. How do you add a new `name` value to a `Map` called `person`? [person.add('name', 'Steve');]
 
 ## Week 13 - ES6 Features
 
@@ -161,3 +192,6 @@
 5. Object.entries
 6. Array.includes
 7. Modules
+8. destructuring
+9. spread operator
+10. rest operator
