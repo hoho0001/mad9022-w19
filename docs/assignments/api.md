@@ -2,8 +2,7 @@
 
 ## Pizza Shop
 
-::: tip  
-**Due before 11:59pm on Friday April 26, 2019** <br/>
+::: tip Due before 11:59pm on Friday April 26, 2019
 Counts for 20% of your final Grade in MAD9022
 :::
 
