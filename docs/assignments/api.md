@@ -3,7 +3,7 @@
 ## Pizza Shop
 
 ::: tip Due before 5:00pm on Friday April 26, 2019
-Counts for 20% of your final Grade in MAD9022
+Counts for 10% of your final Grade in MAD9022
 :::
 
 This will be a joint assignment with a partner. You and a partner of your choosing will be building a whole full-stack solution. The API portion will be built for MAD9124. The front-end interface will be built for MAD9022. [MAD9124 Project Details](https://mad9124-w19.github.io/deliverables/final.html).

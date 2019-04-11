@@ -185,9 +185,9 @@ let person = { id: 123, name: "Bob", email: "bob@work.org" };
 
 ## Week 13 - ES6 Features
 
-1. classes
-2. iterators
-3. generators
+1. What is the name of the function that you MUST have inside a JS class? [constructor]
+2. What is the visual indicator that a function is a generator? [function*]
+3. What is the keyword used inside a generator function? [yield]
 4. Object.values
 5. Object.entries
 6. Array.includes
