@@ -37,14 +37,22 @@ Mention disabling the double click functionality in the map options
 
 ## Project Sequence
 
-Next year change order for Cordova projects
+Next year change order for Cordova projects. Maybe make 2 android and 2 ios and 2 both
 
 1. Audio player
 2. Photo
-3. Local Notifications
-4. Geolocation
+3. Local Notifications - replace this with contacts?
+4. Geolocation - move sooner
 5. Canvas + capture video + thumbnails - Replace this with simpler one
 6. Tundra
+
+## Alternate version of projects
+
+Maybe build towards a bigger project with simplier versions of an app that get combined. Budget app with reminders? Giftr app?
+
+## API Assignment Final
+
+Maybe make it smaller and focus more on good design, error messages, UX, etc
 
 ## Vuepress site
 
